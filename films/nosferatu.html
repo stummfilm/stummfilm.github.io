@@ -9,28 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../resources/fonts/stylesheet.css" />
     <link rel="stylesheet" href="../stylesheets/film-page.css" />
+
+    <script src="../scripts/holder.min.js"></script>
+
     <style>
         .welcome-screen {
-            background-image: url(../resources/images/nosferatu/screenshoot-1.png)
+            background-image: url(../resources/images/nosferatu/screenshoot-1-min.png)
         }
     </style>
-
-    <script src="../scripts/playerjs.js" async></script>
-
-    <script>
-      /*  function PlayerjsAsync() {
-            var player = new Playerjs({
-                id: "player",
-                file: [
-                { "title": "Оригинал", "file": "[480p]../resources/video/nosferatu-de-no-no-480.webm,[360p]../resources/video/nosferatu-de-no-no-360.mp4", "id":"de-no-no" },
-                    { "title": "Русские субитиры", "file": "https://youtu.be/esEGXwsrqTY", "id":"de-ru-no" },
-                   /* { "title": "Английские интертиры", "file": "../resources/video/nosferatu-en-no-no.mp4" },*/
-                    /*{ "title": "Русские интертитры", "file": "[720p]../resources/video/nosferatu-ru-no-no-720.mp4,[480p]../resources/video/nosferatu-ru-no-no-480.mp4,[360p]../resources/video/nosferatu-ru-no-no-360.mp4", "id":"ru-no-no" },
-                ],
-                plstart: "de-ru-no"
-            });
-        }*/
-    </script>
 </head>
 
 <body>
@@ -153,15 +139,15 @@
             <h3>Постеры</h3>
 
             <div class="posters-list">
-                <img src="../resources/images/nosferatu/nosferatu-poster-1.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-2.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-4.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-5.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-6.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-3.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-art-3.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-poster-7.jpg" alt="" class="poster">
-                <img src="../resources/images/nosferatu/nosferatu-art-2.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-1.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-2.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-4.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-5.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-6.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-3.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-art-3.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-poster-7.jpg" alt="" class="poster">
+                <img data-src="../resources/images/nosferatu/nosferatu-art-2.jpg" alt="" class="poster">
             </div>
         </div>
     </div>
@@ -169,6 +155,22 @@
     <footer>
         Made with <img src="../resources/heart.svg" alt="с любовью"> by <a href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
     </footer>
+
+    <script>
+        function asyncLoad(img) {
+            let image = new Image();
+            image.onload = function () { 
+                img.setAttribute("src", this.src)
+            };
+            image.src = img.getAttribute("data-src");
+        }
+
+        let imgs = document.querySelectorAll("img[data-src]");
+        for (const img of imgs) {
+            asyncLoad(img);
+            img.src = "holder.js/200x300";
+        }
+    </script>
 </body>
 
 </html>
