@@ -83,7 +83,7 @@
             <div class="film-list">
                 <a class="item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
                     <div class="poster">
-                        <img src="resources/images/posters/golem.jpg" alt="Golem poster">
+                        <img data-src="resources/images/posters/golem-min.jpg" alt="Golem poster">
                         <span class="label-new">New!</span>
                     </div>
                     <div class="title">Голем, как он пришёл в мир</div>
@@ -92,7 +92,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img src="resources/images/posters/caligari.png" alt="Кабинет доктора Калигари poster">
+                        <img data-src="resources/images/posters/caligari-min.jpg" alt="Кабинет доктора Калигари poster">
                     </div>
                     <div class="title">Кабинет доктора Калигари</div>
                     <div class="year">1920</div>
@@ -100,7 +100,7 @@
 
                 <a class="item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
                     <div class="poster">
-                        <img src="resources/images/posters/nosferatu.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/nosferatu-min.jpg" alt="Nosferatu poster">
                     </div>
                     <div class="title">Носферату, симфония ужаса</div>
                     <div class="year">1922</div>
@@ -108,7 +108,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img src="resources/images/posters/der-brennende.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/brennende-min.jpg" alt="Nosferatu poster">
                     </div>
                     <div class="title">Горящее поле</div>
                     <div class="year">1922</div>
@@ -116,7 +116,7 @@
 
                 <a class="item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
                     <div class="poster">
-                        <img src="resources/images/posters/faust.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/faust-min.jpg" alt="Nosferatu poster">
                     </div>
                     <div class="title">Фауст</div>
                     <div class="year">1926</div>
@@ -124,7 +124,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img src="resources/images/posters/frau-im-mond.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/frau-im-mond-min.jpg" alt="Nosferatu poster">
                     </div>
                     <div class="title">Женщина на луне</div>
                     <div class="year">1929</div>
@@ -251,6 +251,22 @@
         Made with <img src="resources/heart.svg" alt="с любовью"> by <a
             href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
     </footer>
+
+    <script>
+        function asyncLoad(img) {
+            let image = new Image();
+            image.onload = function () { 
+                img.setAttribute("src", this.src)
+            };
+            image.src = img.getAttribute("data-src");
+        }
+
+        let imgs = document.querySelectorAll("img[data-src]");
+        for (const img of imgs) {
+            img.src = "resources/images/placeholder-200x300.png";
+            asyncLoad(img);
+        }
+    </script>
 </body>
 
 </html>
