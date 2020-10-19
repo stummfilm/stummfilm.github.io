@@ -66,10 +66,10 @@ h1 {
 
 .logo {
   position: absolute;
-  top: -50px;
+  top: -45px;
   left: 30px;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: black;
   display: flex;
@@ -78,8 +78,8 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .logo img {
-  width: 50px;
-  margin-bottom: 15px;
+  width: 28px;
+  margin-bottom: 12px;
 }
 
 .film-info {
