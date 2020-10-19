@@ -1,0 +1,1137 @@
+﻿1
+00:00:14,280 --> 00:00:20,811
+<i>FAUST</i>
+
+2
+00:00:21,360 --> 00:00:25,649
+<i>A GERMAN FOLK TALE.</i>
+
+3
+00:00:25,760 --> 00:00:30,049
+Script: Hans Kyser
+
+4
+00:00:30,600 --> 00:00:35,162
+Director: F. W. Murnau
+
+5
+00:00:35,280 --> 00:00:40,320
+Cinematography:
+Carl Hoffmann
+
+6
+00:00:40,440 --> 00:00:43,569
+Set and Costume Design:
+
+7
+00:00:43,680 --> 00:00:46,763
+Robert Herlth,
+Walter Röhrig
+
+8
+00:00:48,120 --> 00:00:51,681
+Cast:
+
+9
+00:01:10,400 --> 00:01:13,529
+Behold:
+
+10
+00:01:13,640 --> 00:01:19,204
+The portals of darkness are open
+
+11
+00:01:19,280 --> 00:01:23,968
+and the shadows of the dead
+hunt over the Earth...
+
+12
+00:02:07,200 --> 00:02:12,286
+Back! Hold! Why dost thou
+scourge mankind
+
+13
+00:02:12,400 --> 00:02:16,371
+with war, plague, famine?!
+
+14
+00:02:18,000 --> 00:02:20,241
+The Earth is mine!
+
+15
+00:02:24,400 --> 00:02:28,405
+Never will the Earth be thine!
+
+16
+00:02:28,520 --> 00:02:32,650
+Man is good: he strives for Truth!
+
+17
+00:02:34,480 --> 00:02:37,211
+Look below!
+
+18
+00:02:58,840 --> 00:03:02,686
+All things in heaven and on Earth
+
+19
+00:03:02,800 --> 00:03:05,406
+are wonderful!
+
+20
+00:03:05,520 --> 00:03:08,842
+But the greatest wonder
+
+21
+00:03:09,000 --> 00:03:13,688
+is man's freedom to choose
+
+22
+00:03:13,800 --> 00:03:17,168
+between good and evil!
+
+23
+00:03:31,720 --> 00:03:34,326
+Dost thou know Faust?!
+
+24
+00:03:37,320 --> 00:03:40,051
+A knave like all others!
+
+25
+00:03:40,160 --> 00:03:43,209
+He preaches good and does evil!
+
+26
+00:03:43,320 --> 00:03:47,325
+He seeks to turn base metal into gold!
+
+27
+00:03:47,440 --> 00:03:50,250
+Behold his greed!
+
+28
+00:04:56,480 --> 00:04:59,131
+A wager:
+
+29
+00:04:59,240 --> 00:05:05,122
+I will wrest Faust's soul away from God!
+
+30
+00:05:10,880 --> 00:05:14,168
+If thou canst destroy
+
+31
+00:05:14,280 --> 00:05:17,602
+what is divine in Faust,
+
+32
+00:05:17,720 --> 00:05:19,609
+the Earth is thine!
+
+33
+00:05:26,240 --> 00:05:29,961
+No man can resist evil!
+
+34
+00:05:30,080 --> 00:05:33,129
+The bet is on!!
+
+35
+00:06:54,640 --> 00:06:56,768
+The Plague!...The Plague!
+
+36
+00:07:37,320 --> 00:07:40,324
+The devastating epidemic raged:
+
+37
+00:07:40,480 --> 00:07:44,610
+within a few clays half the town lay dying!
+
+38
+00:08:24,000 --> 00:08:26,924
+To find a cure for the plague
+
+39
+00:08:27,040 --> 00:08:29,771
+Faust spent clay and night
+
+40
+00:08:29,880 --> 00:08:32,247
+in prayer with God.
+
+41
+00:08:45,840 --> 00:08:48,366
+...and a great shriek
+
+42
+00:08:48,480 --> 00:08:50,847
+rose from Egypt,
+
+43
+00:08:50,960 --> 00:08:53,327
+for there was not a house
+
+44
+00:08:53,440 --> 00:08:55,249
+without its dead
+
+45
+00:09:06,520 --> 00:09:09,126
+Lord God,
+
+46
+00:09:09,200 --> 00:09:12,727
+bless this act of redemption!
+
+47
+00:09:12,840 --> 00:09:16,606
+Only you can alleviate our misery!
+
+48
+00:09:57,040 --> 00:10:02,251
+Help...help! My mother is dying!
+
+49
+00:12:30,200 --> 00:12:37,322
+Mortal terror and fear of death
+swept through the town...
+
+50
+00:12:50,520 --> 00:12:54,081
+Repent, fast and pray!
+
+51
+00:12:54,200 --> 00:12:58,762
+Only faith can vanquish death!
+
+52
+00:13:36,040 --> 00:13:39,931
+Show respect for the dead!
+
+53
+00:13:42,320 --> 00:13:46,166
+We still live. We still love!
+
+54
+00:13:46,280 --> 00:13:51,127
+We shall die dancing
+in each other's arms!
+
+55
+00:13:57,560 --> 00:14:01,531
+Who has faith shall live!
+
+56
+00:14:01,600 --> 00:14:05,810
+But death will take the sinners!
+
+57
+00:14:23,440 --> 00:14:25,681
+The Plague!! The Plague!!
+
+58
+00:15:21,920 --> 00:15:25,606
+Compassion, Faust!
+
+59
+00:15:25,720 --> 00:15:27,927
+Only you can help us!!
+
+60
+00:15:30,000 --> 00:15:33,402
+Get away from me! We are lost!
+
+61
+00:15:33,520 --> 00:15:37,127
+Neither faith nor knowledge is any help!
+
+62
+00:15:37,240 --> 00:15:39,322
+Everything is a lie...
+
+63
+00:16:24,840 --> 00:16:28,561
+My Lord, thou art merciful
+
+64
+00:16:28,680 --> 00:16:32,241
+and a great goodness
+
+65
+00:17:00,520 --> 00:17:04,445
+The third great key
+
+66
+00:17:04,560 --> 00:17:10,363
+to the force of the ghost of hell
+
+67
+00:17:21,440 --> 00:17:23,044
+And if thou would summon
+
+68
+00:17:23,160 --> 00:17:25,766
+the Prince of Darkness
+to aid thee and give thee
+
+69
+00:17:25,880 --> 00:17:28,406
+all the might and glory
+of the world
+
+70
+00:17:28,520 --> 00:17:33,765
+go to a crossroad
+
+71
+00:17:33,880 --> 00:17:38,841
+and call on him three times...
+
+72
+00:19:08,280 --> 00:19:12,729
+I invoke thy aid, Spirit of Darkness:
+
+73
+00:19:12,880 --> 00:19:16,362
+show thyself!
+
+74
+00:19:30,800 --> 00:19:34,009
+Come forth, demon of evil!
+
+75
+00:19:52,520 --> 00:19:54,727
+As thou art called
+
+76
+00:19:54,880 --> 00:19:58,123
+with thy unholy name:
+
+77
+00:19:58,240 --> 00:20:01,483
+MEPHISTO appear!
+
+78
+00:22:07,240 --> 00:22:10,722
+You have summoned me!
+
+79
+00:22:15,800 --> 00:22:17,882
+Here I am!
+
+80
+00:22:43,600 --> 00:22:46,001
+I renounce God
+and his heavenly legion
+
+81
+00:22:46,080 --> 00:22:48,321
+and so all the power and glory
+
+82
+00:22:48,440 --> 00:22:50,522
+of the world
+
+83
+00:22:50,680 --> 00:22:53,126
+shall be mine
+
+84
+00:22:57,520 --> 00:23:00,888
+Be gone from me, Satan!
+
+85
+00:23:26,720 --> 00:23:31,248
+To have the power to help
+for just one day!
+
+86
+00:23:35,600 --> 00:23:38,410
+One clay! Try it!
+
+87
+00:23:38,560 --> 00:23:41,450
+Just one trial clay!
+
+88
+00:23:49,000 --> 00:23:53,642
+When the sand runs out...
+
+89
+00:23:57,000 --> 00:24:00,482
+...you will be free,
+
+90
+00:24:00,600 --> 00:24:05,242
+the pact cancelled! Sign!
+
+91
+00:24:12,440 --> 00:24:14,522
+GLORY
+
+92
+00:24:14,680 --> 00:24:17,684
+POWER
+
+93
+00:24:41,440 --> 00:24:47,243
+Can you help the hungry and the sick?
+
+94
+00:24:51,760 --> 00:24:55,810
+What you wish, I will perform:
+
+95
+00:24:55,920 --> 00:24:58,651
+You are the master,
+
+96
+00:24:58,760 --> 00:25:02,321
+and I am your servant!
+
+97
+00:25:27,720 --> 00:25:31,167
+A drop of blood!
+
+98
+00:25:52,800 --> 00:25:58,569
+Blood is quite
+a remarkable substance!
+
+99
+00:26:03,440 --> 00:26:06,842
+For one clay only - ?!
+
+100
+00:26:09,800 --> 00:26:14,362
+Until the sand has run out!
+
+101
+00:26:26,200 --> 00:26:29,647
+Faust! Help us!!
+
+102
+00:26:34,200 --> 00:26:38,922
+Then I shall help
+in the devil's name!
+
+103
+00:27:29,720 --> 00:27:32,371
+A miracle! A miracle!
+
+104
+00:28:38,840 --> 00:28:42,447
+In the name of Christ crucified,
+
+105
+00:28:42,560 --> 00:28:46,087
+help my child!
+
+106
+00:28:57,800 --> 00:29:02,567
+He cannot look upon the Holy Cross!
+
+107
+00:29:07,120 --> 00:29:10,602
+He is in league with the devil!
+
+108
+00:29:10,720 --> 00:29:14,486
+Stone him! Stone him!!
+
+109
+00:30:13,280 --> 00:30:17,842
+Deliver me, elixir of death!
+
+110
+00:30:23,440 --> 00:30:26,762
+You cannot cheat me!
+
+111
+00:30:26,880 --> 00:30:30,362
+Remember our pact!
+
+112
+00:30:30,480 --> 00:30:33,563
+The trial clay is not over yet!
+
+113
+00:30:42,040 --> 00:30:46,807
+Death sets all men free!
+
+114
+00:30:59,680 --> 00:31:04,163
+Is that death?
+
+115
+00:31:06,360 --> 00:31:09,921
+It is life, Faust, seducing you
+
+116
+00:31:10,040 --> 00:31:13,123
+with the fair image of your youth!
+
+117
+00:31:29,640 --> 00:31:31,802
+Wretched Faust,
+
+118
+00:31:31,920 --> 00:31:35,049
+why do you seek death:
+
+119
+00:31:35,200 --> 00:31:38,522
+You have not yet lived!
+
+120
+00:31:43,360 --> 00:31:46,648
+I despise my life!
+
+121
+00:31:49,760 --> 00:31:51,888
+Your life was only the dust
+
+122
+00:31:52,000 --> 00:31:54,287
+and mould of books!
+
+123
+00:31:54,400 --> 00:31:57,006
+Pleasure is everything!
+
+124
+00:31:59,840 --> 00:32:02,161
+I am too old!
+
+125
+00:32:13,880 --> 00:32:16,850
+I offer you the greatest happiness:
+
+126
+00:32:16,960 --> 00:32:20,123
+Youth!
+
+127
+00:32:20,240 --> 00:32:22,561
+Seize it!
+
+128
+00:32:31,440 --> 00:32:34,922
+Give me youth!!!
+
+129
+00:33:52,440 --> 00:33:55,250
+I've caught you, old boy!
+
+130
+00:34:59,480 --> 00:35:02,882
+Take me...to her!
+
+131
+00:35:08,040 --> 00:35:11,328
+Step upon my cloak...
+
+132
+00:35:12,560 --> 00:35:17,043
+...and the spinning Earth
+will spread before you!
+
+133
+00:37:57,160 --> 00:37:59,640
+The wedding feast
+
+134
+00:37:59,760 --> 00:38:02,684
+for the Duchess of Parma:
+
+135
+00:38:02,840 --> 00:38:06,561
+the most beautiful woman in Italy!
+
+136
+00:38:45,360 --> 00:38:47,567
+Strange guests!
+
+137
+00:39:15,160 --> 00:39:19,006
+To pay tribute to the highest beauty,
+
+138
+00:39:19,120 --> 00:39:22,249
+my lord brings you
+
+139
+00:39:22,360 --> 00:39:25,603
+his kingdom's treasures!
+
+140
+00:43:03,280 --> 00:43:08,571
+The trial clay is over!
+The sand has run out!
+
+141
+00:43:08,680 --> 00:43:12,651
+Be as you were!
+
+142
+00:43:30,480 --> 00:43:34,371
+Youth... leave me my youth!!
+
+143
+00:43:37,280 --> 00:43:41,080
+I am enslaved for eternity!
+
+144
+00:44:39,720 --> 00:44:43,042
+Faust, you have tasted
+
+145
+00:44:43,200 --> 00:44:46,522
+all of life's pleasures!
+
+146
+00:44:46,600 --> 00:44:49,922
+From indulgence to indulgence...
+
+147
+00:44:50,080 --> 00:44:53,402
+sensation without end!
+
+148
+00:44:53,520 --> 00:44:56,888
+Yet nothing satisfied you!
+
+149
+00:45:02,240 --> 00:45:06,962
+What do you want?
+
+150
+00:45:07,080 --> 00:45:11,165
+A woman, a game of chance, an orgy?
+
+151
+00:45:11,280 --> 00:45:15,205
+Whatever you wish, I must grant!
+
+152
+00:45:18,800 --> 00:45:22,122
+Do you want the emperor's crown?!
+
+153
+00:45:58,040 --> 00:46:00,247
+Home!
+
+154
+00:46:13,120 --> 00:46:17,682
+Take me home! At once!
+
+155
+00:46:38,800 --> 00:46:43,567
+Is today a feast clay in your town?
+
+156
+00:46:48,360 --> 00:46:51,284
+Are you heathen born
+
+157
+00:46:51,400 --> 00:46:54,483
+that you have never heard
+
+158
+00:46:54,600 --> 00:46:57,649
+of Holy Easter?!
+
+159
+00:48:01,320 --> 00:48:06,247
+It is as if life had stood still:
+
+160
+00:48:06,400 --> 00:48:11,327
+All is as it once was...!
+
+161
+00:48:56,400 --> 00:49:00,530
+An innocent little girl runs to a priest...
+
+162
+00:49:00,640 --> 00:49:04,440
+She is not for you...!
+
+163
+00:49:52,680 --> 00:49:56,446
+Praise the Lord
+
+164
+00:49:56,560 --> 00:50:01,009
+the mighty king of honour...
+
+165
+00:50:43,640 --> 00:50:45,768
+Holiday, Mother!
+
+166
+00:52:14,000 --> 00:52:19,689
+I know more obliging wenches
+for you here!
+
+167
+00:52:22,280 --> 00:52:27,889
+I only want her! Do as I command!
+
+168
+00:53:53,320 --> 00:53:55,527
+Brother Valentin!
+
+169
+00:54:33,960 --> 00:54:36,167
+Once this little golden chain
+
+170
+00:54:36,280 --> 00:54:38,362
+is in the house,
+
+171
+00:54:38,480 --> 00:54:40,642
+she will begin to feel
+
+172
+00:54:40,760 --> 00:54:43,331
+the devil's power!
+
+173
+00:56:48,600 --> 00:56:52,002
+Good gracious, how pretty you are!
+
+174
+00:56:54,200 --> 00:56:57,488
+Any lovers yet?
+
+175
+00:58:09,080 --> 00:58:11,447
+What do you have there, child?
+
+176
+00:58:32,360 --> 00:58:35,330
+Tell her, my child,
+
+177
+00:58:35,440 --> 00:58:40,082
+if you don't want to tell me!
+
+178
+01:00:10,880 --> 01:00:15,647
+May I visit Aunt Marthe?
+
+179
+01:00:19,320 --> 01:00:22,802
+Frau Marthe Schwerdtlein
+
+180
+01:00:38,000 --> 01:00:43,564
+Three little drops from this love potion
+
+181
+01:00:43,680 --> 01:00:49,687
+and all the girls' hearts will be yours!
+
+182
+01:02:15,160 --> 01:02:20,849
+Aunt Marthe, look what I found
+in my drawer...!
+
+183
+01:02:27,400 --> 01:02:30,722
+A rich treasure!
+
+184
+01:02:36,320 --> 01:02:38,607
+I found it in my drawer!
+
+185
+01:03:01,920 --> 01:03:07,723
+Let me try on this
+beautiful necklace just the once!
+
+186
+01:03:48,880 --> 01:03:51,770
+A small bouquet for the bridegroom,
+
+187
+01:03:51,880 --> 01:03:54,645
+a little wreath for the bride...
+
+188
+01:05:26,000 --> 01:05:31,643
+Excuse me, lovely lady,
+I seek Frau Marthe Schwerdtlein!
+
+189
+01:06:10,000 --> 01:06:15,643
+From your cousin...
+from Lombardy...!
+
+190
+01:06:27,440 --> 01:06:33,209
+He gave me this necklace
+as a gift for you!
+
+191
+01:08:12,160 --> 01:08:15,607
+Those we encircle within this ring,
+
+192
+01:08:15,720 --> 01:08:19,122
+shall be sweethearts...!
+
+193
+01:08:23,400 --> 01:08:28,167
+One, two, three, makes you free...!
+
+194
+01:08:53,040 --> 01:08:55,441
+Pardon: my stomach is too weak
+for such a fiery drink!
+
+195
+01:09:00,160 --> 01:09:05,326
+Allow me to mix myself a little drink,
+
+196
+01:09:05,440 --> 01:09:09,889
+that I learned to make in Padua!
+
+197
+01:11:36,040 --> 01:11:41,922
+My friend, a prince of the noblest blood!
+
+198
+01:13:11,920 --> 01:13:14,002
+<i>He loves me...</i>
+
+199
+01:13:15,400 --> 01:13:17,607
+<i>...he</i> loves <i>me not...</i>
+
+200
+01:13:25,080 --> 01:13:26,764
+<i>...he</i> loves <i>me...</i>
+
+201
+01:13:30,520 --> 01:13:35,321
+Yes, with all his heart
+he loves you!
+
+202
+01:14:14,320 --> 01:14:16,687
+She loves <i>me...</i>
+
+203
+01:14:20,600 --> 01:14:22,841
+<i>...she</i> loves <i>me not...</i>
+
+204
+01:14:25,080 --> 01:14:27,162
+She loves you!
+
+205
+01:14:54,360 --> 01:14:56,886
+I am yours forever!
+
+206
+01:15:49,320 --> 01:15:51,482
+He loves me...!
+
+207
+01:17:11,480 --> 01:17:15,087
+What are you waiting for!?
+
+208
+01:17:15,200 --> 01:17:19,603
+Your sweetheart lights the way for you...!
+
+209
+01:17:21,840 --> 01:17:24,081
+Cursed matchmaker!
+
+210
+01:17:28,080 --> 01:17:31,607
+I will keep the brother
+out of the way!
+
+211
+01:19:12,080 --> 01:19:17,849
+To the prettiest girl in town!
+
+212
+01:19:20,120 --> 01:19:23,886
+No other girl is as pretty as your sister:
+
+213
+01:19:24,000 --> 01:19:28,449
+Long live Gretchen!
+
+214
+01:19:36,360 --> 01:19:39,648
+A pretty girl is not pure!
+
+215
+01:19:41,920 --> 01:19:44,207
+Here's to Gretchen!
+
+216
+01:19:47,560 --> 01:19:50,928
+Here's to your Gretchen!
+
+217
+01:19:55,640 --> 01:19:59,850
+If you hurry,
+you can catch her lover
+
+218
+01:19:59,960 --> 01:20:03,806
+before he slips out of her room!
+
+219
+01:23:10,920 --> 01:23:15,403
+<i>Flee... flee...
+You have murdered</i> him!
+
+220
+01:23:24,280 --> 01:23:25,122
+Murder!
+
+221
+01:23:32,160 --> 01:23:34,322
+Murder...Murder...!!
+
+222
+01:23:49,800 --> 01:23:54,249
+Murder...Murder...Murder...!!
+
+223
+01:24:06,240 --> 01:24:08,208
+Flee!...Flee!!
+
+224
+01:24:08,320 --> 01:24:12,006
+The deputies are already seeking
+the murderer!
+
+225
+01:24:39,640 --> 01:24:43,201
+Don't touch me, you wench!
+
+226
+01:24:43,320 --> 01:24:46,722
+Your lover has slain me!
+
+227
+01:24:56,400 --> 01:25:00,371
+Read me my requiem mass first!
+
+228
+01:25:00,480 --> 01:25:04,565
+Then: take this harlot to the stocks!
+
+229
+01:25:19,800 --> 01:25:23,043
+Gretchen...Gretchen...!
+
+230
+01:25:52,440 --> 01:25:56,240
+Now death and nature with surprise,
+
+231
+01:25:56,360 --> 01:26:00,206
+behold the trembling sinners rise
+
+232
+01:26:00,320 --> 01:26:04,120
+to meet the judge's searching eyes...
+
+233
+01:26:13,720 --> 01:26:17,770
+For now before the judge
+
+234
+01:26:17,880 --> 01:26:21,930
+no crime can pass unpunished here...
+
+235
+01:26:24,520 --> 01:26:27,808
+All hidden things must appear plain!
+
+236
+01:30:07,480 --> 01:30:10,131
+Mother...Mother!
+
+237
+01:30:39,480 --> 01:30:43,246
+And a little child has been born,
+
+238
+01:30:43,360 --> 01:30:46,489
+in the depth of winter...
+
+239
+01:33:05,160 --> 01:33:09,848
+Have mercy on my child!
+
+240
+01:33:15,000 --> 01:33:19,722
+Aren't you Gretchen,
+who stood in the stocks?!
+
+241
+01:33:50,400 --> 01:33:55,122
+Mercy! Mercy! My child is dying!
+
+242
+01:36:23,440 --> 01:36:26,649
+She has killed her child!
+
+243
+01:36:26,800 --> 01:36:31,169
+Seize her, the murderess!
+
+244
+01:36:35,640 --> 01:36:40,328
+Faust...Faust...help your Gretchen !!
+
+245
+01:36:54,360 --> 01:36:56,567
+Mephisto!
+
+246
+01:37:00,120 --> 01:37:02,691
+You have betrayed me!
+
+247
+01:37:02,800 --> 01:37:05,849
+She suffers...she suffers!!
+
+248
+01:37:11,600 --> 01:37:17,243
+To the stake
+with the child murderer!
+
+249
+01:37:28,560 --> 01:37:31,882
+Save her, save Gretchen!!
+
+250
+01:37:34,640 --> 01:37:41,842
+Too late! They're already building
+her funeral pyre!
+
+251
+01:37:43,960 --> 01:37:47,567
+You are still my servant!
+
+252
+01:37:47,680 --> 01:37:52,129
+Take me to her, or the pact is broken!
+
+253
+01:37:55,560 --> 01:37:59,281
+My steed awaits!
+
+254
+01:37:59,400 --> 01:38:03,007
+Quick, before morning comes!
+
+255
+01:40:32,960 --> 01:40:36,282
+Faster...faster!!
+
+256
+01:41:12,720 --> 01:41:17,681
+Oh, had I never wished for youth
+
+257
+01:41:17,840 --> 01:41:22,926
+that brought this misery!
+
+258
+01:41:23,040 --> 01:41:27,011
+Curse...curse the delusion of youth!
+
+259
+01:41:45,760 --> 01:41:52,245
+You have yourself cursed youth!
+
+260
+01:41:52,360 --> 01:41:57,685
+What you wish, I must grant!
+
+261
+01:42:38,200 --> 01:42:44,048
+Be as you were: an old man!!
+
+262
+01:42:58,080 --> 01:43:02,722
+Forgive...forgive me my sin!
+
+263
+01:43:49,760 --> 01:43:50,886
+Gretchen...!
+
+264
+01:45:02,360 --> 01:45:05,728
+Here is no place for thee!
+
+265
+01:45:08,440 --> 01:45:11,887
+I claim my wager!
+
+266
+01:45:15,320 --> 01:45:19,803
+One word breaks thy pact!
+
+267
+01:45:22,560 --> 01:45:25,245
+What is the word?
+
+268
+01:45:28,840 --> 01:45:31,241
+The word that wings joyfully
+
+269
+01:45:31,360 --> 01:45:33,806
+throughout the universe,
+
+270
+01:45:33,920 --> 01:45:36,207
+the word that appeases
+
+271
+01:45:36,320 --> 01:45:38,687
+every pain and grief,
+
+272
+01:45:38,800 --> 01:45:41,167
+the word that expiates
+
+273
+01:45:41,280 --> 01:45:43,647
+all human guilt,
+
+274
+01:45:43,760 --> 01:45:46,127
+the eternal word,
+
+275
+01:45:46,240 --> 01:45:49,050
+dost thou not know it?!
+
+276
+01:45:52,440 --> 01:45:55,205
+What is the word?
+
+277
+01:46:02,520 --> 01:46:10,007
+LOVE
+

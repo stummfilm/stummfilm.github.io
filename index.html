@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Немое немецкое кино смотреть онлайн - DSF</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="resources/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="stylesheets/index.css" />
+</head>
+
+<body>
+    <div class="welcome-screen">
+        <h1>
+            немое<br>
+            немецкое<br>
+            кино
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <img src="resources/logo.svg" alt="">
+        </div>
+
+        <section class="catalog">
+            <header>
+                <h2>Каталог</h2>
+
+                <div class="search-box">
+                    <img src="resources/search.svg" alt="Search icon">
+                    <input type="text" placeholder="Поиск" id="search-input">
+                </div>
+            </header>
+
+            <div class="additional-search">
+                <div id="random-film">
+                    <img src="resources/dice.svg" alt="">
+                    Случайный фильм
+                </div>
+
+                <div id="mood-film">
+                    <img src="resources/mood.svg" alt="">
+                    Найти по настроению
+                </div>
+
+                <div id="genre-film">
+                    <img src="resources/genre.svg" alt="">
+                    Найти по жанру
+                </div>
+            </div>
+
+            <div class="additional-search-panels">
+                <div id="genres-panel" class="hide">
+                    <span class="genre">Ужасы</span>
+                    <span class="genre">Фентези</span>
+                    <span class="genre">Драма</span>
+                    <span class="genre">Исторический</span>
+                    <span class="genre">Фантастика</span>
+                </div>
+            </div>
+
+            <div class="film-list">
+                <a class="item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
+                    <div class="poster">
+                        <img src="resources/images/posters/golem.jpg" alt="Golem poster">
+                        <span class="label-new">New!</span>
+                    </div>
+                    <div class="title">Голем, как он пришёл в мир</div>
+                    <div class="year">1920</div>
+                </a>
+
+                <a class="item" href="films/" data-genres="">
+                    <div class="poster">
+                        <img src="resources/images/posters/caligari.png" alt="Кабинет доктора Калигари poster">
+                    </div>
+                    <div class="title">Кабинет доктора Калигари</div>
+                    <div class="year">1920</div>
+                </a>
+
+                <a class="item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
+                    <div class="poster">
+                        <img src="resources/images/posters/nosferatu.png" alt="Nosferatu poster">
+                    </div>
+                    <div class="title">Носферату, симфония ужаса</div>
+                    <div class="year">1922</div>
+                </a>
+
+                <a class="item" href="films/" data-genres="">
+                    <div class="poster">
+                        <img src="resources/images/posters/der-brennende.png" alt="Nosferatu poster">
+                    </div>
+                    <div class="title">Горящее поле</div>
+                    <div class="year">1922</div>
+                </a>
+
+                <a class="item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
+                    <div class="poster">
+                        <img src="resources/images/posters/faust.png" alt="Nosferatu poster">
+                    </div>
+                    <div class="title">Фауст</div>
+                    <div class="year">1926</div>
+                </a>
+
+                <a class="item" href="films/" data-genres="">
+                    <div class="poster">
+                        <img src="resources/images/posters/frau-im-mond.png" alt="Nosferatu poster">
+                    </div>
+                    <div class="title">Женщина на луне</div>
+                    <div class="year">1929</div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        function randomInteger(min, max) {
+            let rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+
+        document.getElementById("random-film").addEventListener("click", () => {
+            let href = null;
+            while (!href) {
+                let items = document.querySelectorAll(".item");
+                let randomId = randomInteger(0, items.length);
+                href = items.item(randomId).getAttribute("href");
+                document.location = href;
+            }
+        });
+
+        var genres = [];
+
+        function applyGenres() {
+            for (const item of document.querySelectorAll(".item")) {
+                if (genres.length === 0 && item.classList.contains("hide")) {
+                    item.classList.remove("hide");
+                    continue;
+                }
+
+                item.classList.add("hide");
+
+                let itemGenres = item.getAttribute("data-genres");
+                if (itemGenres) {
+                    let flag = false;
+                    for (const genre of genres) {
+                        if (!itemGenres.includes(genre)) {
+                            flag = true;
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        item.classList.remove("hide");
+                    }
+                }
+            }
+        }
+
+        function toggleGenre(event) {
+            event.target.classList.toggle("active");
+
+            let name = event.target.innerText;
+            if (!genres.includes(name)) {
+                genres.push(name);
+            } else {
+                genres.splice(genres.indexOf(name), 1);
+            }
+
+            applyGenres();
+        }
+
+        document.getElementById("genre-film").addEventListener("click", () => {
+            document.getElementById("genre-film").classList.toggle("active");
+            document.getElementById("genres-panel").classList.toggle("hide");
+        });
+
+        for (const element of document.getElementsByClassName("genre")) {
+            element.addEventListener('click', toggleGenre);
+        }
+
+        let searchInput = document.querySelector("#search-input");
+
+        function f() {
+            let textToSearch = searchInput.value;
+
+            for (const item of document.querySelectorAll(".item")) {
+                let title = item.getElementsByClassName("title")[0].innerText.toLowerCase();
+
+                item.style.display = 'none';
+
+                if (!textToSearch || title.includes(textToSearch)) {
+                    item.style.display = 'block';
+                }
+            }
+        }
+
+        searchInput.addEventListener('change', f);
+
+        searchInput.addEventListener('input', f);
+    </script>
+    <!--script>
+        function randomInteger(min, max) {
+            // получить случайное число от (min-0.5) до (max+0.5)
+            let rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+
+        let prev = 0;
+
+        document.querySelectorAll(".poster").forEach(item => {
+            let deg = randomInteger(0, 5);
+
+            if (deg <= 2 || prev === deg) {
+                deg = randomInteger(-5, -3);
+            }
+
+            prev = deg;
+
+            item.style.webkitTransform = 'rotate('+deg+'deg)'; 
+            item.style.mozTransform    = 'rotate('+deg+'deg)'; 
+            item.style.msTransform     = 'rotate('+deg+'deg)'; 
+            item.style.oTransform      = 'rotate('+deg+'deg)'; 
+            item.style.transform       = 'rotate('+deg+'deg)'; 
+            //item.style.transform = "rotate(" + randomInteger(1, 5) + "deg);"
+        });
+    </script-->
+
+    <footer>
+        Made with <img src="resources/heart.svg" alt="с любовью"> by <a
+            href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
+    </footer>
+</body>
+
+</html>

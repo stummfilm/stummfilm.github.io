@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голем, как он пришёл в этот мир (1920) смотреть онлайн с русскими субтитрами - DSF</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../resources/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../stylesheets/film-page.css" />
+
+    <script src="../scripts/playerjs.js" async></script>
+    <script src="../scripts/holder.min.js" async></script>
+
+    <script>
+        function PlayerjsAsync() {
+            var player = new Playerjs({
+                id: "player",
+                file: [
+                    { "title": "Русские субтитры", "file": "[360p]../resources/video/faust-de-ru-no-360.mp4" },
+                    { "title": "Английский + русская озвучка", "file": "[480p]../resources/video/faust-en-no-ru.mp4,[360p]../resources/video/faust-en-no-ru-360.mp4" },
+                    { "title": "Оригинал", "file": "../resources/video/nosferatu-480.webm" },
+                ]
+            });
+        }
+    </script>
+
+    <style>
+        .welcome-screen {
+            background-image: url(../resources/images/golem/screenshot-1.jpg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-screen">
+        <a class="logo" href="../index.html">
+            <img src="../resources/logo.svg" alt="">
+        </a>
+
+        <h2>
+            Der Golem,<br>
+            wie er in die Welt kam
+        </h2>
+    </div>
+
+    <div class="container">
+        <h1>Голем, как он пришёл в этот мир</h1>
+
+        <div class="film-container">
+            <div id="player"></div>
+
+            <div class="film-info">
+                <div class="tags">
+                    <span class="tag">Исторический</span>
+                    <span class="tag">Фантастика</span>
+                    <span class="tag">Драма</span>
+                </div>
+
+                <span class="country-year">Германия, 1920</span>
+                <p class="film-description">
+                    Император намерен изгнать евреев из пражского гетто под тем предлогом,
+                    что они практикуют чёрную магию. Рабби Лёв видит единственную возможность
+                    предотвратить изгнание — действительно обратиться к тёмным силам. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made with <img src="../resources/heart.svg" alt="с любовью"> by <a href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
+    </footer>
+
+</body>
+
+</html>

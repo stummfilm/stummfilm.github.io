@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Cn.eot');
+    src: local('Frutiger LT Std 57 Condensed'), local('FrutigerLTStd-Cn'),
+        url('FrutigerLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Cn.woff2') format('woff2'),
+        url('FrutigerLTStd-Cn.woff') format('woff'),
+        url('FrutigerLTStd-Cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-LightCn.eot');
+    src: local('Frutiger LT Std 47 Light Condensed'), local('FrutigerLTStd-LightCn'),
+        url('FrutigerLTStd-LightCn.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-LightCn.woff2') format('woff2'),
+        url('FrutigerLTStd-LightCn.woff') format('woff'),
+        url('FrutigerLTStd-LightCn.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-BoldItalic.eot');
+    src: local('Frutiger LT Std 66 Bold Italic'), local('FrutigerLTStd-BoldItalic'),
+        url('FrutigerLTStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-BoldItalic.woff2') format('woff2'),
+        url('FrutigerLTStd-BoldItalic.woff') format('woff'),
+        url('FrutigerLTStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-UltraBlack.eot');
+    src: local('Frutiger LT Std 95 Ultra Black'), local('FrutigerLTStd-UltraBlack'),
+        url('FrutigerLTStd-UltraBlack.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-UltraBlack.woff2') format('woff2'),
+        url('FrutigerLTStd-UltraBlack.woff') format('woff'),
+        url('FrutigerLTStd-UltraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Italic.eot');
+    src: local('Frutiger LT Std 56 Italic'), local('FrutigerLTStd-Italic'),
+        url('FrutigerLTStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Italic.woff2') format('woff2'),
+        url('FrutigerLTStd-Italic.woff') format('woff'),
+        url('FrutigerLTStd-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-BlackCn.eot');
+    src: local('Frutiger LT Std 77 Black Condensed'), local('FrutigerLTStd-BlackCn'),
+        url('FrutigerLTStd-BlackCn.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-BlackCn.woff2') format('woff2'),
+        url('FrutigerLTStd-BlackCn.woff') format('woff'),
+        url('FrutigerLTStd-BlackCn.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Roman.eot');
+    src: local('Frutiger LT Std 55 Roman'), local('FrutigerLTStd-Roman'),
+        url('FrutigerLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Roman.woff2') format('woff2'),
+        url('FrutigerLTStd-Roman.woff') format('woff'),
+        url('FrutigerLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Black.eot');
+    src: local('Frutiger LT Std 75 Black'), local('FrutigerLTStd-Black'),
+        url('FrutigerLTStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Black.woff2') format('woff2'),
+        url('FrutigerLTStd-Black.woff') format('woff'),
+        url('FrutigerLTStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-LightItalic.eot');
+    src: local('Frutiger LT Std 46 Light Italic'), local('FrutigerLTStd-LightItalic'),
+        url('FrutigerLTStd-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-LightItalic.woff2') format('woff2'),
+        url('FrutigerLTStd-LightItalic.woff') format('woff'),
+        url('FrutigerLTStd-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-BoldCn.eot');
+    src: local('Frutiger LT Std 67 Bold Condensed'), local('FrutigerLTStd-BoldCn'),
+        url('FrutigerLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-BoldCn.woff2') format('woff2'),
+        url('FrutigerLTStd-BoldCn.woff') format('woff'),
+        url('FrutigerLTStd-BoldCn.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Bold.eot');
+    src: local('Frutiger LT Std 65 Bold'), local('FrutigerLTStd-Bold'),
+        url('FrutigerLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Bold.woff2') format('woff2'),
+        url('FrutigerLTStd-Bold.woff') format('woff'),
+        url('FrutigerLTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-ExtraBlackCn.eot');
+    src: local('Frutiger LT Std 87 Extra Black Condensed'), local('FrutigerLTStd-ExtraBlackCn'),
+        url('FrutigerLTStd-ExtraBlackCn.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-ExtraBlackCn.woff2') format('woff2'),
+        url('FrutigerLTStd-ExtraBlackCn.woff') format('woff'),
+        url('FrutigerLTStd-ExtraBlackCn.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-BlackItalic.eot');
+    src: local('Frutiger LT Std 76 Black Italic'), local('FrutigerLTStd-BlackItalic'),
+        url('FrutigerLTStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-BlackItalic.woff2') format('woff2'),
+        url('FrutigerLTStd-BlackItalic.woff') format('woff'),
+        url('FrutigerLTStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('FrutigerLTStd-Light.eot');
+    src: local('Frutiger LT Std 45 Light'), local('FrutigerLTStd-Light'),
+        url('FrutigerLTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTStd-Light.woff2') format('woff2'),
+        url('FrutigerLTStd-Light.woff') format('woff'),
+        url('FrutigerLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
