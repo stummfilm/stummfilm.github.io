@@ -10,21 +10,7 @@
     <link rel="stylesheet" href="../resources/fonts/stylesheet.css" />
     <link rel="stylesheet" href="../stylesheets/film-page.css" />
 
-    <script src="../scripts/playerjs.js" async></script>
     <script src="../scripts/holder.min.js" async></script>
-
-    <script>
-        function PlayerjsAsync() {
-            var player = new Playerjs({
-                id: "player",
-                file: [
-                    { "title": "Русские субтитры", "file": "[360p]../resources/video/faust-de-ru-no-360.mp4" },
-                    { "title": "Английский + русская озвучка", "file": "https://youtu.be/eZjY1GUbZj8" },
-                    { "title": "Оригинал", "file": "../resources/video/nosferatu-480.webm" },
-                ]
-            });
-        }
-    </script>
 
     <style>
         .welcome-screen {
@@ -49,7 +35,9 @@
         <h1>Фауст: старинная немецкая легенда</h1>
 
         <div class="film-container">
-            <div id="player"></div>
+            <div id="player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3RBarCqVkXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
             <div class="film-info">
                 <div class="tags">
