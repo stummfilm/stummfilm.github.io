@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="../resources/fonts/stylesheet.css" />
     <link rel="stylesheet" href="../stylesheets/film-page.css" />
 
-    <script src="../scripts/holder.min.js"></script>
-
     <style>
         .welcome-screen {
             background-image: url(../resources/images/nosferatu/screenshoot-1-min.png)
@@ -167,8 +165,8 @@
 
         let imgs = document.querySelectorAll("img[data-src]");
         for (const img of imgs) {
+            img.src = "../resources/images/placeholder-200x300.png";
             asyncLoad(img);
-            img.src = "holder.js/200x300";
         }
     </script>
 </body>
