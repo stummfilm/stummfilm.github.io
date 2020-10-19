@@ -195,6 +195,7 @@ footer {
     #player {
         width: 85vw;
         height: 47.8vw; /* 16:9 */
+        min-height: 300px;
     }
 }
 
@@ -212,5 +213,46 @@ footer {
         font-weight: bold;
         font-size: 32px;
         padding: 40px 0 40px 0;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    .poster {
+        height: auto;
+        width: 100%;
+    }
+
+    .actors {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .actors-list {
+        row-gap: 30px;
+
+        font-size: 14px;
+    
+        .actor {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100px;
+    
+            .actor-name {
+                text-align: center;
+                margin-top: 10px;
+            }
+    
+            .actor-role {
+                text-align: center;
+                color: #939393;
+            }
+        }
     }
 }
