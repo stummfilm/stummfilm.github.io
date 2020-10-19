@@ -21,6 +21,7 @@ body {
   top: 0;
   height: 100vh;
   width: 100vw;
+  background: #282828;
   background-size: cover;
   background-position: center top;
   z-index: -1;
@@ -78,8 +79,8 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .logo img {
-  width: 28px;
-  margin-bottom: 12px;
+  width: 24px;
+  margin-bottom: 15px;
 }
 
 .film-info {
