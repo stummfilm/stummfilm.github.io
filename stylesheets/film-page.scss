@@ -108,7 +108,6 @@ main {
     & > aside {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
-        font-weight: lighter;
         line-height: 22px;
     }
 }
@@ -171,8 +170,14 @@ main {
 }
 
 .tags {
+    display: block;
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+.country-year {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .tag {
@@ -191,7 +196,6 @@ main {
 .about {
     padding-top: 50px;
     font-size: 18px;
-    font-weight: lighter;
     line-height: 22px;
 }
 
@@ -242,7 +246,7 @@ h3 {
 }
 
 .posters {
-    padding-bottom: 90px;
+    padding-bottom: $lg-margin;
 }
 
 .posters-list {
@@ -280,6 +284,8 @@ footer {
             width: 85vw;
             height: 47.8vw; /* 16:9 */
             min-height: 200px;
+            margin-right: 0px; /* a.k.a. column-gap: 0px; */
+            margin-bottom: 20px; /* a.k.a. row-gap: 20px; */
         }
     }
 }

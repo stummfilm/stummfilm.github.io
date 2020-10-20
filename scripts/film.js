@@ -45,3 +45,17 @@ toggleTranslationListButton.addEventListener("click", () => {
     toggleTranslationListButtonText.innerText = prevText;
     prevText = newPrevText;
 });
+
+function asyncLoad(img) {
+    let image = new Image();
+    image.onload = function () { 
+        img.setAttribute("src", this.src)
+    };
+    image.src = img.getAttribute("data-src");
+}
+
+let imgs = document.querySelectorAll("img[data-src]");
+for (const img of imgs) {
+    img.src = "../resources/images/placeholder-200x300.png";
+    asyncLoad(img);
+}
