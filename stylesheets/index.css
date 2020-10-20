@@ -264,6 +264,9 @@ footer a {
   }
 }
 @media screen and (max-width: 540px) {
+  .film-list {
+    margin-top: 20px;
+  }
   .film-list .item {
     max-width: 150px;
     margin: 10px 10px 0 0;
