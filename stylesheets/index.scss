@@ -214,8 +214,8 @@ main {
             content: '';
             position: absolute;
             width: 200px;
-            height: 297px;
-            left: -1px;
+            height: 298px;
+            left: 0px;
             top: 0px;
         }
 
@@ -229,16 +229,13 @@ main {
             @include itemPseudoelementSizing;
 
             background-color: transparent;
-            border: solid 1px transparent;
-            border-radius: 2px;
             transition: background-color .3s;
         }
 
         &:hover>.poster::before {
             background-color: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(1px);
-            border-color: $secondary-background-color;
-            transition: background-color .3s, border-color .3s;
+        
+            transition: background-color .3s;
         }
     }
 }
@@ -328,12 +325,8 @@ footer {
             }
     
             @mixin itemPseudoelementSizing {
-                content: '';
-                position: absolute;
                 width: 150px;
                 height: 223px;
-                left: -1px;
-                top: 0px;
             }
     
             &:hover>.poster::after {

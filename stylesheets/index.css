@@ -185,8 +185,8 @@ main h2 {
   content: "";
   position: absolute;
   width: 200px;
-  height: 297px;
-  left: -1px;
+  height: 298px;
+  left: 0px;
   top: 0px;
   background: transparent url(../resources/play.svg) no-repeat center center;
 }
@@ -194,19 +194,15 @@ main h2 {
   content: "";
   position: absolute;
   width: 200px;
-  height: 297px;
-  left: -1px;
+  height: 298px;
+  left: 0px;
   top: 0px;
   background-color: transparent;
-  border: solid 1px transparent;
-  border-radius: 2px;
   transition: background-color 0.3s;
 }
 .film-list .item:hover > .poster::before {
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(1px);
-  border-color: #282828;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .label-new {
@@ -284,20 +280,12 @@ footer a {
     font-size: 12px;
   }
   .film-list .item:hover > .poster::after {
-    content: "";
-    position: absolute;
     width: 150px;
     height: 223px;
-    left: -1px;
-    top: 0px;
   }
   .film-list .item > .poster::before {
-    content: "";
-    position: absolute;
     width: 150px;
     height: 223px;
-    left: -1px;
-    top: 0px;
   }
 }
 
