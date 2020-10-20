@@ -148,13 +148,13 @@ h3 {
 
 .posters-list {
     display: flex;
-    justify-content: center;
-    gap: 5px;
     flex-wrap: wrap;
 }
 
 .poster {
     height: 300px;
+
+    margin: 0 5px 5px 0; /* gap: 5px; */
 }
 
 footer {
@@ -196,7 +196,7 @@ footer {
     #player {
         width: 85vw;
         height: 47.8vw; /* 16:9 */
-        min-height: 300px;
+        min-height: 200px;
     }
 }
 

@@ -50,10 +50,8 @@ body {
 
 main {
     margin-top: 100vh;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: black;
+    padding: 0 30px 30px 30px;
+    background-color: $background-color;
     z-index: 100;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, .3);
 
@@ -83,7 +81,7 @@ main {
 
 #catalog {
     position: relative;
-    top: -50px; /* to avoid logo  padding */
+    top: -60px; /* to avoid logo  padding */
 
     &>header {
         display: flex;
@@ -184,27 +182,26 @@ main {
 }
 
 .film-list {
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-  /*  justify-content: space-around;*/
-    gap: 30px;
 
     .item {
-        color: rgb(240, 240, 240);
+        max-width: 200px;
+        margin: 30px 30px 0 0; /* gap: 30px; */
+        color: $text-color;
         text-decoration: none;
 
         .poster {
             position: relative;
-        }
 
-        img {
-            max-width: 200px;
+            img {
+                max-width: 200px;
+                border-radius: 2px;
+            }
         }
 
         .title {
             margin-top: 15px;
-            max-width:200px ;
             font-size: 24px;
             font-weight: bold;
         }
@@ -213,33 +210,34 @@ main {
             margin-top: 5px;
         }
 
-        &:hover>.poster::after {
+        @mixin itemPseudoelementSizing {
             content: '';
-            background-image: url(../resources/play.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
             position: absolute;
-            width: 199px;
+            width: 200px;
             height: 297px;
-            left: 0;
-            top: 0;
+            left: -1px;
+            top: 0px;
+        }
+
+        &:hover>.poster::after {
+            @include itemPseudoelementSizing;
+
+            background: transparent url(../resources/play.svg) no-repeat center center;
         }
 
         &>.poster::before {
-            content: '';
-            position: absolute;
-            width: 199px;
-            height: 297px;
-            left: 0;
-            top: 0;
+            @include itemPseudoelementSizing;
+
             background-color: transparent;
             border: solid 1px transparent;
+            border-radius: 2px;
             transition: background-color .3s;
         }
 
         &:hover>.poster::before {
             background-color: rgba(0, 0, 0, 0.7);
-            border: solid 1px rgb(40, 40, 40);
+            backdrop-filter: blur(1px);
+            border-color: $secondary-background-color;
             transition: background-color .3s, border-color .3s;
         }
     }
@@ -249,7 +247,7 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #6d1652;
+    background-color: #682553;
     padding: 5px 10px;
     border-bottom-left-radius: 5px;
     box-shadow: -2px 2px 4px 1px rgba(0, 0, 0, 0.5);
@@ -283,12 +281,12 @@ footer {
 
 @media screen and (max-width: 500px) {
     #welcome-screen {
-    h1 {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 48px;
+        h1 {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 48px;
+        }
     }
-}
 
     main {
         padding-right: 15px;
@@ -303,5 +301,47 @@ footer {
     #search-panel  {
         flex-direction: column;
         justify-content: start;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .film-list {
+        .item {
+            max-width: 150px;
+            margin: 10px 10px 0 0; /* gap: 30px; */
+    
+            .poster {
+                img {
+                    max-width: 150px;
+                }
+            }
+    
+            .title {
+                margin-top: 7px;
+                font-size: 16px;
+            }
+    
+            .year {
+                margin-top: 2px;
+                font-size: 12px;
+            }
+    
+            @mixin itemPseudoelementSizing {
+                content: '';
+                position: absolute;
+                width: 150px;
+                height: 223px;
+                left: -1px;
+                top: 0px;
+            }
+    
+            &:hover>.poster::after {
+                @include itemPseudoelementSizing;
+            }
+    
+            &>.poster::before {
+                @include itemPseudoelementSizing;
+            }
+        }
     }
 }

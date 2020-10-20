@@ -41,9 +41,7 @@ body {
 
 main {
   margin-top: 100vh;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 30px 30px;
   background-color: black;
   z-index: 100;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
@@ -73,7 +71,7 @@ main h2 {
 
 #catalog {
   position: relative;
-  top: -50px;
+  top: -60px;
   /* to avoid logo  padding */
 }
 #catalog > header {
@@ -158,25 +156,25 @@ main h2 {
 }
 
 .film-list {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  /*  justify-content: space-around;*/
-  gap: 30px;
 }
 .film-list .item {
+  max-width: 200px;
+  margin: 30px 30px 0 0;
+  /* gap: 30px; */
   color: #f0f0f0;
   text-decoration: none;
 }
 .film-list .item .poster {
   position: relative;
 }
-.film-list .item img {
+.film-list .item .poster img {
   max-width: 200px;
+  border-radius: 2px;
 }
 .film-list .item .title {
   margin-top: 15px;
-  max-width: 200px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -185,29 +183,29 @@ main h2 {
 }
 .film-list .item:hover > .poster::after {
   content: "";
-  background-image: url(../resources/play.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
   position: absolute;
-  width: 199px;
+  width: 200px;
   height: 297px;
-  left: 0;
-  top: 0;
+  left: -1px;
+  top: 0px;
+  background: transparent url(../resources/play.svg) no-repeat center center;
 }
 .film-list .item > .poster::before {
   content: "";
   position: absolute;
-  width: 199px;
+  width: 200px;
   height: 297px;
-  left: 0;
-  top: 0;
+  left: -1px;
+  top: 0px;
   background-color: transparent;
   border: solid 1px transparent;
+  border-radius: 2px;
   transition: background-color 0.3s;
 }
 .film-list .item:hover > .poster::before {
   background-color: rgba(0, 0, 0, 0.7);
-  border: solid 1px #282828;
+  backdrop-filter: blur(1px);
+  border-color: #282828;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -215,7 +213,7 @@ main h2 {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #6d1652;
+  background-color: #682553;
   padding: 5px 10px;
   border-bottom-left-radius: 5px;
   box-shadow: -2px 2px 4px 1px rgba(0, 0, 0, 0.5);
@@ -263,6 +261,40 @@ footer a {
   #search-panel {
     flex-direction: column;
     justify-content: start;
+  }
+}
+@media screen and (max-width: 540px) {
+  .film-list .item {
+    max-width: 150px;
+    margin: 10px 10px 0 0;
+    /* gap: 30px; */
+  }
+  .film-list .item .poster img {
+    max-width: 150px;
+  }
+  .film-list .item .title {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+  .film-list .item .year {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .film-list .item:hover > .poster::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 223px;
+    left: -1px;
+    top: 0px;
+  }
+  .film-list .item > .poster::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 223px;
+    left: -1px;
+    top: 0px;
   }
 }
 
