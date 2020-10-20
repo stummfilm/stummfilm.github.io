@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(240, 240, 240);
+
+        display: flex;
+
+        height: 100vh;
+        margin: 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        position: absolute;
+        left: 30px;
+        bottom: 100px;
+
+        font-size: 20px;
+      }
+
+      a {
+        color: rgb(240, 240, 240);
+      }
+
+      img {
+        align-self: center; margin-left: 30px; padding-bottom: 50px;
+      }
+
+      @media screen and (max-width: 500px) {
+        img {
+          left: 15px;
+          padding-bottom: 10px;
+          max-width: 50vw;
+        }
+
+        p {
+          left: 15px;
+          right: 15px;
+
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
   <body>
-    Sorry, something went wrong!
+    <img style="align-self: center; margin-left: 30px; padding-bottom: 50px;" src="resources/images/404/404.svg" >
+
+    <p>
+      извините, похоже данной страницы не существует<br>
+      но вы можете <a href="index.html">вернуться на главную</a>
+    </p>
   </body>
 </html>
