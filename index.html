@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Немое немецкое кино смотреть онлайн - DSF</title>
+    <title>Немое немецкое кино смотреть онлайн - Stummfilm</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="resources/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="resources/favicon/apple-icon-60x60.png">
@@ -123,19 +123,19 @@
 
             <div class="extended-search-panel hide" id="random-panel">
                 <h3>Случайный фильм</h3>
-<div class="content">
-                <div id="random-fi">
-                    <img src="resources/images/placeholder-random.png" alt="">
-                </div>
+                <div class="content">
+                    <div id="random-fi">
+                        <img src="resources/images/placeholder-random.png" alt="">
+                    </div>
 
-                <button id="random-run">Мне повезёт!</button>
-            </div>
+                    <button id="random-run">Мне повезёт!</button>
+                </div>
             </div>
 
             <div class="film-list">
                 <a class="item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
                     <div class="poster">
-                        <img data-src="resources/images/posters/golem-min.jpg" alt="Golem poster">
+                        <img data-src="resources/images/posters/golem-min.jpg" src="resources/images/placeholder-200x300.png" alt="Golem poster">
                         <span class="label-new">New!</span>
                     </div>
                     <div class="title">Голем, как он пришёл в мир</div>
@@ -144,7 +144,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img data-src="resources/images/posters/caligari-min.jpg" alt="Кабинет доктора Калигари poster">
+                        <img data-src="resources/images/posters/caligari-min.jpg" src="resources/images/placeholder-200x300.png" alt="Кабинет доктора Калигари poster">
                     </div>
                     <div class="title">Кабинет доктора Калигари</div>
                     <div class="year">1920</div>
@@ -152,7 +152,7 @@
 
                 <a class="item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
                     <div class="poster">
-                        <img data-src="resources/images/posters/nosferatu-min.jpg" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/nosferatu-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
                     <div class="title">Носферату, симфония ужаса</div>
                     <div class="year">1922</div>
@@ -160,7 +160,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img data-src="resources/images/posters/brennende-min.jpg" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/brennende-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
                     <div class="title">Горящее поле</div>
                     <div class="year">1922</div>
@@ -168,7 +168,7 @@
 
                 <a class="item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
                     <div class="poster">
-                        <img data-src="resources/images/posters/faust-min.jpg" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/faust-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
                     <div class="title">Фауст</div>
                     <div class="year">1926</div>
@@ -176,7 +176,7 @@
 
                 <a class="item" href="films/" data-genres="">
                     <div class="poster">
-                        <img data-src="resources/images/posters/frau-im-mond-min.jpg" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/frau-im-mond-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
                     <div class="title">Женщина на луне</div>
                     <div class="year">1929</div>
@@ -186,7 +186,23 @@
         </section>
     </main>
 
+    <footer>
+        Made with <img src="resources/heart.svg" alt="love"> by 
+        <a href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
+    </footer>
+
     <script>
+        function loadImageAsync(img) {
+            let image = new Image();
+            image.onload = () => img.setAttribute("src", image.src);
+            image.src = img.getAttribute("data-src");
+        }
+
+        let images = document.querySelectorAll("img[data-src]");
+        for (const image of images) {
+            loadImageAsync(image);
+        }
+
         function randomInteger(min, max) {
             let rand = min - 0.5 + Math.random() * (max - min + 1);
             return Math.round(rand);
@@ -216,13 +232,11 @@
             });
 
             console.log(items)
-            for(let i = 1; i <= 10; i++) {
+            for (let i = 1; i <= 10; i++) {
                 setTimeout(() => {
                     let randomId = randomInteger(0, covers.length - 1);
                     container.innerHTML = "";
                     container.appendChild(items[(randomId)]);
-               /* href = items.item(randomId).getAttribute("href");
-                document.location = href;*/
                 }, 100 * i);
             }
         });
@@ -282,7 +296,7 @@
         function f() {
             let textToSearch = searchInput.value;
 
-            if(textToSearch) {
+            if (textToSearch) {
                 document.getElementById("search-film").classList.add("active");
             } else {
                 document.getElementById("search-film").classList.remove("active");
@@ -300,55 +314,33 @@
         }
 
         searchInput.addEventListener('change', f);
-
         searchInput.addEventListener('input', f);
-    </script>
-    <!--script>
-        function randomInteger(min, max) {
-            // получить случайное число от (min-0.5) до (max+0.5)
-            let rand = min - 0.5 + Math.random() * (max - min + 1);
-            return Math.round(rand);
-        }
-
-        let prev = 0;
-
-        document.querySelectorAll(".poster").forEach(item => {
-            let deg = randomInteger(0, 5);
-
-            if (deg <= 2 || prev === deg) {
-                deg = randomInteger(-5, -3);
+        /*
+            function randomInteger(min, max) {
+                // получить случайное число от (min-0.5) до (max+0.5)
+                let rand = min - 0.5 + Math.random() * (max - min + 1);
+                return Math.round(rand);
             }
-
-            prev = deg;
-
-            item.style.webkitTransform = 'rotate('+deg+'deg)'; 
-            item.style.mozTransform    = 'rotate('+deg+'deg)'; 
-            item.style.msTransform     = 'rotate('+deg+'deg)'; 
-            item.style.oTransform      = 'rotate('+deg+'deg)'; 
-            item.style.transform       = 'rotate('+deg+'deg)'; 
-            //item.style.transform = "rotate(" + randomInteger(1, 5) + "deg);"
-        });
-    </script-->
-
-    <footer>
-        Made with <img src="resources/heart.svg" alt="с любовью"> by <a
-            href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
-    </footer>
-
-    <script>
-        function asyncLoad(img) {
-            let image = new Image();
-            image.onload = function () {
-                img.setAttribute("src", this.src)
-            };
-            image.src = img.getAttribute("data-src");
-        }
-
-        let imgs = document.querySelectorAll("img[data-src]");
-        for (const img of imgs) {
-            img.src = "resources/images/placeholder-200x300.png";
-            asyncLoad(img);
-        }
+    
+            let prev = 0;
+    
+            document.querySelectorAll(".poster").forEach(item => {
+                let deg = randomInteger(0, 5);
+    
+                if (deg <= 2 || prev === deg) {
+                    deg = randomInteger(-5, -3);
+                }
+    
+                prev = deg;
+    
+                item.style.webkitTransform = 'rotate('+deg+'deg)'; 
+                item.style.mozTransform    = 'rotate('+deg+'deg)'; 
+                item.style.msTransform     = 'rotate('+deg+'deg)'; 
+                item.style.oTransform      = 'rotate('+deg+'deg)'; 
+                item.style.transform       = 'rotate('+deg+'deg)'; 
+                //item.style.transform = "rotate(" + randomInteger(1, 5) + "deg);"
+            });
+        */
     </script>
 </body>
 
