@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../resources/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../resources/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../resources/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../resources/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -25,57 +25,104 @@
     <meta name="theme-color" content="#000000">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="../resources/fonts/stylesheet.css" />
     <link rel="stylesheet" href="../stylesheets/film-page.css" />
 
     <style>
-        .welcome-screen {
+        header {
             background-image: url(../resources/images/golem/screenshot-1-min.jpg)
         }
     </style>
 </head>
 
 <body>
-    <div class="welcome-screen">
+    <header>
         <a class="logo" href="../index.html">
             <img src="../resources/logo.svg" alt="">
         </a>
 
-        <h2>
+        <div class="title">
             Der Golem,<br>
             wie er in die Welt kam
-        </h2>
-    </div>
+        </div>
+    </header>
 
-    <div class="container">
+    <main>
         <h1>Голем, как он пришёл в этот мир</h1>
 
-        <div class="film-container">
+        <section id="film">
             <div id="player">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HJR3yWV67gU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="film-info">
-                <div class="tags">
-                    <span class="tag">Исторический</span>
-                    <span class="tag">Фантастика</span>
-                    <span class="tag">Драма</span>
+                <div id="playerPlaceholder" class="hide">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
 
-                <span class="country-year">Германия, 1920</span>
-                <p class="film-description">
+                <iframe id="playerFrame" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <aside>
+                <div id="translations">
+                    <div id="toggle-translation-list">
+                        <span>Показать переводы</span>
+
+                        <svg viewbox="0 0 48 48">
+                            <path d="M8.43934 15.9393C9.02513 15.3536 9.97487 15.3536 10.5607 15.9393L24 29.3787L37.4393 15.9393C38.0251 15.3536 38.9749 15.3536 39.5607 15.9393C40.1464 16.5251 40.1464 17.4749 39.5607 18.0607L25.0607 32.5607C24.4749 33.1464 23.5251 33.1464 22.9393 32.5607L8.43934 18.0607C7.85355 17.4749 7.85355 16.5251 8.43934 15.9393Z"/>
+                        </svg>
+                    </div>
+
+                    <div id="translation-list" class="hide">
+                        <div data-src="MkDwhLfmAxY">
+                            Немецкие интертитры
+                        </div>
+
+                        <div id="translation-default" data-src="HJR3yWV67gU">
+                            Русские интертитры
+                        </div>
+
+                        <div data-src="GQoi2oprBe0">
+                            Английские интертитры
+                        </div>
+                    </div>
+                </div>
+
+                <p class="description">
                     Император намерен изгнать евреев из пражского гетто под тем предлогом,
                     что они практикуют чёрную магию. Рабби Лёв видит единственную возможность
-                    предотвратить изгнание — действительно обратиться к тёмным силам. 
+                    предотвратить изгнание — действительно обратиться к тёмным силам.
                 </p>
+            </aside>
+        </section>
+
+        <div class="about">
+            <h3>О фильме</h3>
+
+            <div class="tags">
+                <span class="tag">Исторический</span>
+                <span class="tag">Фантастика</span>
+                <span class="tag">Драма</span>
             </div>
+
+            <span class="country-year">Германия, 1920</span>
+
+            <p>
+                Фильм »Голем, как он пришёл в этот мир« является единственным сохранившимся фильмом из
+                трилогии Пауля Вегнера о Големе: два других - »Голем« (»Der Golem«) 1915 года и
+                »Голем и танцовщица« (»Der Golem und die Tänzerin«) 1917 года считаются утерянными.
+            </p>
         </div>
-    </div>
+    </main>
 
     <footer>
-        Made with <img src="../resources/heart.svg" alt="с любовью"> by <a href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
+        Made with <img src="../resources/heart.svg" alt="с любовью"> by <a
+            href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
     </footer>
 
+    <script src="../scripts/film.js"></script>
 </body>
 
 </html>

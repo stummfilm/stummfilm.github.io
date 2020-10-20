@@ -1,99 +1,198 @@
+$text-color: rgb(240, 240, 240);
+$secondary-text-color: rgb(160, 160, 160);
+
+$background-color: rgb(0, 0, 0);
+$secondary-background-color: rgb(40, 40, 40);
+
+$lg-margin: 30px;
+
+$logo-size: 90px;
+
 body {
-    background-color: black;
-    color: rgb(240, 240, 240);
-    font-family: 'Frutiger LT Std', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.film-container {
-    display: flex;
-    gap: 20px;
-}
-
-#player {
-    flex-shrink: 0;
-    width: 60vw;
-    height: 30vw;
-}
-
-.welcome-screen {
+header {
     position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
     width: 100vw;
-    background: rgb(40, 40, 40);
+    background-color: $secondary-background-color;
     background-size: cover;
     background-position: center top;
     z-index: -1;
+
+    & > .logo {
+        width: $logo-size;
+        height: $logo-size;
+
+        position: absolute;
+        top: -($logo-size / 2);
+        left: $lg-margin;
+
+        border-radius: 50%;
+        background-color: $background-color;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+        & > img {
+            width: 24px;
+            margin-bottom: 15px;
+        }
+    }
+
+    & > .title {
+        position: absolute;
+        bottom: 60px;
+        left: $lg-margin;
+        right: $lg-margin;
+        font-weight: bold;
+        font-size: 72px;
+        color: $text-color;
+        text-shadow: -2px 4px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
-h2 {
-    position: absolute;
-    bottom: 60px;
-    left: 30px;
-    right: 30px;
-    font-weight: bold;
-    font-size: 72px;
-    color: white;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 48px;
-    padding: 60px 0 60px 0;
-}
-
-.container {
+main {
     margin-top: 100vh;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: black;
-    z-index: 100;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, .3);
+    padding: 0px $lg-margin $lg-margin $lg-margin;
+    background-color: $background-color;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+
+    & > h1 {
+        font-weight: bold;
+        font-size: 48px;
+        padding: 60px 0px 30px 0px;
+    }
+}
+
+#film {
+    display: flex;
+
+    & > #player {
+        position: relative;
+        width: 60vw;
+        height: 33.75vw;
+        overflow: auto;
+        margin-right: 20px; /* a.k.a. column-gap: 20px; */
+        flex-shrink: 0;
+        background-color: $secondary-background-color;
+        border-radius: 2px;
+
+        & > iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        & > #playerPlaceholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    & > aside {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 22px;
+    }
+}
+
+#translations {
+    font-size: 16px;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    border-radius: 2px;
+}
+
+#toggle-translation-list {
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 10px;
+    color: $text-color;
+    background-color: $secondary-background-color;
+    border-radius: 2px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        height: 16px;
+        width: 16px;
+        padding: 0 10px;
+        fill: $text-color;
+    }
+}
+
+#toggle-translation-list.opened {
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+#translation-list {
+    margin-bottom: 20px;
+
+    & > div {
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 2px;
+
+        &::before {
+            content: url(../resources/circle.svg);
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+        }
+
+        &.active::before {
+            content: url(../resources/circle-filled.svg);
+        }
+    }
 }
 
 .tags {
-    margin-bottom: 30px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .tag {
+    display: inline-block;
     background-color: #171717;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px 10px;
     margin-right: 5px;
 }
 
-.logo {
-    position: absolute;
-    top: -45px;
-    left: 30px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
-    img {
-        width: 24px;
-        margin-bottom: 15px;
-    }
+.description {
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
-.film-info {
-    font-family: Arial, Helvetica, sans-serif;
+.about {
+    padding-top: 50px;
     font-size: 18px;
     font-weight: lighter;
     line-height: 22px;
-}
-
-.film-description {
-    margin-top: 10px;
-    padding-bottom: 10px;
 }
 
 .avatar {
@@ -103,7 +202,7 @@ h1 {
 
 h3 {
     font-size: 36px;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -173,47 +272,35 @@ footer {
     }
 }
 
-#player {
-    position: relative;
-    height: 33.75vw;
-    overflow: auto; 
-    -webkit-overflow-scrolling: touch;
+@media screen and (max-width: 1050px) {
+    #film {
+        flex-direction: column;
 
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        & > #player {
+            width: 85vw;
+            height: 47.8vw; /* 16:9 */
+            min-height: 200px;
+        }
     }
 }
 
-@media screen and (max-width: 1050px) {
-    .film-container {
-        flex-direction: column;
-    }
-
-    #player {
-        width: 85vw;
-        height: 47.8vw; /* 16:9 */
-        min-height: 200px;
-    }
+.hide {
+    display: none;
 }
 
 @media screen and (max-width: 500px) {
-    h2 {
+    header>.title {
         bottom: 65px;
         left: 15px;
         right: 15px;
-        font-weight: bold;
         font-size: 48px;
-        color: white;
     }
-    
-    h1 {
-        font-weight: bold;
-        font-size: 32px;
-        padding: 40px 0 40px 0;
+
+    main {
+        & > h1 {
+            font-size: 32px;
+            padding: 40px 0 40px 0;
+        }
     }
 
     h3 {
@@ -229,7 +316,7 @@ footer {
         padding-top: 45px;
         padding-bottom: 45px;
     }
-    
+
     .avatar {
         width: 100px;
         height: 100px;
@@ -239,21 +326,85 @@ footer {
         row-gap: 30px;
 
         font-size: 14px;
-    
+
         .actor {
             margin-left: 10px;
             margin-right: 10px;
             width: 100px;
-    
+
             .actor-name {
                 text-align: center;
                 margin-top: 10px;
             }
-    
+
             .actor-role {
                 text-align: center;
                 color: #939393;
             }
         }
+    }
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+    div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fff;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+
+        &:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        &:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        &:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        &:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+    }
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
     }
 }
