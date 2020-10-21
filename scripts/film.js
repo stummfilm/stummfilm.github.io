@@ -56,6 +56,5 @@ function asyncLoad(img) {
 
 let imgs = document.querySelectorAll("img[data-src]");
 for (const img of imgs) {
-    img.src = "../resources/images/placeholder-200x300.png";
     asyncLoad(img);
 }
