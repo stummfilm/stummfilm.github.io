@@ -85,20 +85,25 @@ main h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px 20px;
   font-size: 16px;
 }
 #search-panel > div {
   display: flex;
   align-items: center;
-  column-gap: 5px;
   cursor: pointer;
   color: #a0a0a0;
+  margin-right: 20px;
+  /* a.k.a. column-gap: 20px; in parent tag*/
+}
+#search-panel > div:last-child {
+  margin-right: 0;
 }
 #search-panel > div > svg {
   width: 24px;
   height: 24px;
   fill: #a0a0a0;
+  margin-right: 5px;
+  /* a.k.a. column-gap: 5px; in parent tag*/
 }
 #search-panel > div:hover, #search-panel > div:focus, #search-panel > div:active, #search-panel > div.active {
   color: #e6e6e6;
@@ -122,6 +127,12 @@ main h2 {
   color: #a0a0a0;
 }
 
+@media screen and (max-width: 865px) {
+  #search-panel > div {
+    margin-bottom: 15px;
+    /* a.k.a. row-gap: 15px; in parent tag*/
+  }
+}
 .extended-search-panel {
   margin-top: 20px;
   padding: 20px 10px 20px 10px;
@@ -134,7 +145,7 @@ main h2 {
 .genre {
   color: #a0a0a0;
   border-radius: 2px;
-  padding: 3px 5px;
+  padding: 5px 5px;
   cursor: pointer;
 }
 .genre.active {
@@ -151,7 +162,9 @@ main h2 {
 .random-result img {
   max-width: 150px;
 }
-.random-result .title, .random-result .year, .random-result .label-new {
+.random-result .title,
+.random-result .year,
+.random-result .label-new {
   display: none;
 }
 

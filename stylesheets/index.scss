@@ -7,7 +7,7 @@ $secondary-background-color: rgb(40, 40, 40);
 body {
     background-color: $background-color;
     color: $text-color;
-    font-family: 'Frutiger LT Std', Arial, Helvetica, sans-serif;
+    font-family: "Frutiger LT Std", Arial, Helvetica, sans-serif;
 }
 
 #welcome-screen {
@@ -40,7 +40,7 @@ body {
 
     border-radius: 50%;
     background-color: $background-color;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, .3);
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
 
     img {
         width: 24px;
@@ -53,7 +53,7 @@ main {
     padding: 0 30px 30px 30px;
     background-color: $background-color;
     z-index: 100;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 
     h2 {
         font-weight: bold;
@@ -83,7 +83,7 @@ main {
     position: relative;
     top: -60px; /* to avoid logo  padding */
 
-    &>header {
+    & > header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -91,41 +91,46 @@ main {
     }
 }
 
-#search-panel  {
+#search-panel {
     $alt-text-color: rgb(230, 230, 230);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px 20px;
     font-size: 16px;
 
-    >div {
+    & > div {
         display: flex;
         align-items: center;
-        column-gap: 5px;
         cursor: pointer;
 
         color: $secondary-text-color;
 
-        >svg {
+        margin-right: 20px; /* a.k.a. column-gap: 20px; in parent tag*/
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        & > svg {
             width: 24px;
             height: 24px;
             fill: $secondary-text-color;
+            margin-right: 5px; /* a.k.a. column-gap: 5px; in parent tag*/
         }
 
         &:hover,
         &:focus,
         &:active,
         &.active {
-          color:$alt-text-color;
+            color: $alt-text-color;
 
-          >svg {
-              fill: $alt-text-color;
-          }
+            > svg {
+                fill: $alt-text-color;
+            }
         }
 
-        >input[type="text"] {
+        > input[type="text"] {
             background-color: transparent;
             border: none;
             width: 100%;
@@ -133,7 +138,7 @@ main {
             outline: none;
             color: $alt-text-color;
             font-size: 16px;
-        
+
             &::placeholder {
                 position: relative;
                 font-size: 16px;
@@ -141,6 +146,12 @@ main {
                 color: $secondary-text-color;
             }
         }
+    }
+}
+
+@media screen and (max-width: 865px) {
+    #search-panel > div {
+        margin-bottom: 15px; /* a.k.a. row-gap: 15px; in parent tag*/
     }
 }
 
@@ -157,11 +168,11 @@ main {
 .genre {
     color: $secondary-text-color;
     border-radius: 2px;
-    padding: 3px 5px;
+    padding: 5px 5px;
     cursor: pointer;
 
     &.active {
-       /* background-color: $secondary-text-color;*/
+        /* background-color: $secondary-text-color;*/
         color: $text-color;
     }
 }
@@ -176,7 +187,9 @@ main {
     img {
         max-width: 150px;
     }
-    .title, .year, .label-new {
+    .title,
+    .year,
+    .label-new {
         display: none;
     }
 }
@@ -211,7 +224,7 @@ main {
         }
 
         @mixin itemPseudoelementSizing {
-            content: '';
+            content: "";
             position: absolute;
             width: 200px;
             height: 298px;
@@ -219,23 +232,23 @@ main {
             top: 0px;
         }
 
-        &:hover>.poster::after {
+        &:hover > .poster::after {
             @include itemPseudoelementSizing;
 
             background: transparent url(../resources/play.svg) no-repeat center center;
         }
 
-        &>.poster::before {
+        & > .poster::before {
             @include itemPseudoelementSizing;
 
             background-color: transparent;
-            transition: background-color .3s;
+            transition: background-color 0.3s;
         }
 
-        &:hover>.poster::before {
+        &:hover > .poster::before {
             background-color: rgba(0, 0, 0, 0.7);
-        
-            transition: background-color .3s;
+
+            transition: background-color 0.3s;
         }
     }
 }
@@ -295,7 +308,7 @@ footer {
         }
     }
 
-    #search-panel  {
+    #search-panel {
         flex-direction: column;
         justify-content: start;
     }
@@ -307,33 +320,33 @@ footer {
         .item {
             max-width: 150px;
             margin: 10px 10px 0 0; /* gap: 30px; */
-    
+
             .poster {
                 img {
                     max-width: 150px;
                 }
             }
-    
+
             .title {
                 margin-top: 7px;
                 font-size: 16px;
             }
-    
+
             .year {
                 margin-top: 2px;
                 font-size: 12px;
             }
-    
+
             @mixin itemPseudoelementSizing {
                 width: 150px;
                 height: 223px;
             }
-    
-            &:hover>.poster::after {
+
+            &:hover > .poster::after {
                 @include itemPseudoelementSizing;
             }
-    
-            &>.poster::before {
+
+            & > .poster::before {
                 @include itemPseudoelementSizing;
             }
         }
