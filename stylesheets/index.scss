@@ -7,7 +7,7 @@ $secondary-background-color: rgb(40, 40, 40);
 body {
     background-color: $background-color;
     color: $text-color;
-    font-family: "Frutiger LT Std", Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 #welcome-screen {
@@ -339,7 +339,7 @@ footer {
 
             @mixin itemPseudoelementSizing {
                 width: 150px;
-                height: 223px;
+                height: 226px;
             }
 
             &:hover > .poster::after {
@@ -350,5 +350,15 @@ footer {
                 @include itemPseudoelementSizing;
             }
         }
+    }
+}
+
+.posts-list {
+    margin: 30px;
+    font-size: 24px;
+    
+    .post {
+        color: $text-color;
+        text-decoration: none;
     }
 }

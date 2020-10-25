@@ -1,7 +1,7 @@
 body {
   background-color: black;
   color: #f0f0f0;
-  font-family: "Frutiger LT Std", Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #welcome-screen {
@@ -294,12 +294,20 @@ footer a {
   }
   .film-list .item:hover > .poster::after {
     width: 150px;
-    height: 223px;
+    height: 226px;
   }
   .film-list .item > .poster::before {
     width: 150px;
-    height: 223px;
+    height: 226px;
   }
+}
+.posts-list {
+  margin: 30px;
+  font-size: 24px;
+}
+.posts-list .post {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */

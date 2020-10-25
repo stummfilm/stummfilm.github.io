@@ -25,8 +25,9 @@
     <meta name="theme-color" content="#000000">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="resources/fonts/stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -133,7 +134,15 @@
             </div>
 
             <div class="film-list">
-                <a class="item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
+                <a class="item" href="films/erzahlungen.html" data-aos="zoom-in" data-genres="Фэнтези">
+                    <div class="poster">
+                        <img src="resources/images/posters/erzahlungen.jpg" alt="Erzahlungen poster">
+                    </div>
+                    <div class="title">Рассказы Гофмана</div>
+                    <div class="year">1916</div>
+                </a>
+
+                <a class="item" href="films/golem.html" data-aos="zoom-in" data-genres="Исторический, Фантастика, Драма">
                     <div class="poster">
                         <img data-src="resources/images/posters/golem-min.jpg" src="resources/images/placeholder-200x300.png" alt="Golem poster">
                     </div>
@@ -149,7 +158,7 @@
                     <div class="year">1920</div>
                 </a-->
 
-                <a class="item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
+                <a class="item" href="films/nosferatu.html" data-aos="zoom-in" data-genres="Ужасы, Фентези">
                     <div class="poster">
                         <img data-src="resources/images/posters/nosferatu-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
@@ -165,7 +174,7 @@
                     <div class="year">1922</div>
                 </a-->
 
-                <a class="item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
+                <a class="item" href="films/faust.html" data-aos="zoom-in" data-genres="Ужасы, Фентези, Драма">
                     <div class="poster">
                         <img data-src="resources/images/posters/faust-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
@@ -173,7 +182,7 @@
                     <div class="year">1926</div>
                 </a>
 
-                <a class="item" href="films/frau.html" data-genres="">
+                <a class="item" href="films/frau.html" data-aos="zoom-in" data-genres="">
                     <div class="poster">
                         <img data-src="resources/images/posters/frau-im-mond-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
@@ -181,7 +190,16 @@
                     <div class="year">1929</div>
                 </a>
             </div>
+        </section>
 
+        <section>
+            <header>
+                <h2>О немом кино</h2>
+            </header>
+
+            <div class="posts-list">
+                <a class="post" href="posts/intertitles-and-typograhy.html">Интертитры и типографика</a>
+            </div>
         </section>
     </main>
 
@@ -341,6 +359,11 @@
             });
         */
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

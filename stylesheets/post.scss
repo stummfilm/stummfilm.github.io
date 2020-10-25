@@ -1,0 +1,52 @@
+$text-color: rgb(240, 240, 240);
+$secondary-text-color: rgb(160, 160, 160);
+
+$background-color: rgb(0, 0, 0);
+$secondary-background-color: rgb(40, 40, 40);
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'Inter', sans-serif;
+
+    padding: 30px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+p::first-letter {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    float: left;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+article {
+    max-width: 70ch;
+}
+
+figure {
+    text-align: center;
+    img {
+        max-width: 400px;
+    }
+    figcaption {
+        color: $secondary-text-color;
+    }
+}
+
+a {
+    color: inherit;
+}

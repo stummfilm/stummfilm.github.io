@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  color: #f0f0f0;
+  font-family: "Inter", sans-serif;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+p {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+p::first-letter {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: bold;
+  float: left;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+
+article {
+  max-width: 70ch;
+}
+
+figure {
+  text-align: center;
+}
+figure img {
+  max-width: 400px;
+}
+figure figcaption {
+  color: #a0a0a0;
+}
+
+a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=post.css.map */
