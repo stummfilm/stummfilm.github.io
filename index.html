@@ -134,65 +134,49 @@
             </div>
 
             <div class="film-list">
-                <a class="item" href="films/erzahlungen.html" data-aos="zoom-in" data-genres="Фэнтези">
-                    <div class="poster">
+                <a class="film-list-item" href="films/erzahlungen.html" data-genres="Фэнтези">
+                    <div class="film-list-item__poster">
                         <img src="resources/images/posters/erzahlungen.jpg" alt="Erzahlungen poster">
                     </div>
-                    <div class="title">Рассказы Гофмана</div>
-                    <div class="year">1916</div>
+                    <div class="film-list-item__title">Рассказы Гофмана</div>
+                    <div class="film-list-item__year">1916</div>
                 </a>
 
-                <a class="item" href="films/golem.html" data-aos="zoom-in" data-genres="Исторический, Фантастика, Драма">
-                    <div class="poster">
+                <a class="film-list-item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
+                    <div class="film-list-item__poster">
                         <img data-src="resources/images/posters/golem-min.jpg" src="resources/images/placeholder-200x300.png" alt="Golem poster">
                     </div>
-                    <div class="title">Голем, как он пришёл в мир</div>
-                    <div class="year">1920</div>
+                    <div class="film-list-item__title">Голем, как он пришёл в мир</div>
+                    <div class="film-list-item__year">1920</div>
                 </a>
 
-                <!--a class="item" href="films/" data-genres="">
-                    <div class="poster">
-                        <img data-src="resources/images/posters/caligari-min.jpg" src="resources/images/placeholder-200x300.png" alt="Кабинет доктора Калигари poster">
-                    </div>
-                    <div class="title">Кабинет доктора Калигари</div>
-                    <div class="year">1920</div>
-                </a-->
-
-                <a class="item" href="films/nosferatu.html" data-aos="zoom-in" data-genres="Ужасы, Фентези">
-                    <div class="poster">
+                <a class="film-list-item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
+                    <div class="film-list-item__poster">
                         <img data-src="resources/images/posters/nosferatu-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
-                    <div class="title">Носферату, симфония ужаса</div>
-                    <div class="year">1922</div>
+                    <div class="film-list-item__title">Носферату, симфония ужаса</div>
+                    <div class="film-list-item__year">1922</div>
                 </a>
 
-                <!--a class="item" href="films/" data-genres="">
-                    <div class="poster">
-                        <img data-src="resources/images/posters/brennende-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
-                    </div>
-                    <div class="title">Горящее поле</div>
-                    <div class="year">1922</div>
-                </a-->
-
-                <a class="item" href="films/faust.html" data-aos="zoom-in" data-genres="Ужасы, Фентези, Драма">
-                    <div class="poster">
+                <a class="film-list-item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
+                    <div class="film-list-item__poster">
                         <img data-src="resources/images/posters/faust-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
-                    <div class="title">Фауст</div>
-                    <div class="year">1926</div>
+                    <div class="film-list-item__title">Фауст</div>
+                    <div class="film-list-item__year">1926</div>
                 </a>
 
-                <a class="item" href="films/frau.html" data-aos="zoom-in" data-genres="">
-                    <div class="poster">
+                <a class="film-list-item" href="films/frau.html" data-genres="">
+                    <div class="film-list-item__poster">
                         <img data-src="resources/images/posters/frau-im-mond-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
                     </div>
-                    <div class="title">Женщина на луне</div>
-                    <div class="year">1929</div>
+                    <div class="film-list-item__title">Женщина на луне</div>
+                    <div class="film-list-item__year">1929</div>
                 </a>
             </div>
         </section>
 
-        <section>
+        <!--section>
             <header>
                 <h2>О немом кино</h2>
             </header>
@@ -200,7 +184,7 @@
             <div class="posts-list">
                 <a class="post" href="posts/intertitles-and-typograhy.html">Интертитры и типографика</a>
             </div>
-        </section>
+        </section-->
     </main>
 
     <footer>
@@ -241,9 +225,9 @@
 
         document.getElementById("random-run").addEventListener("click", () => {
             let container = document.getElementById("random-fi");
-            let items = [...document.querySelectorAll(".item")].map(item => {
+            let items = [...document.querySelectorAll(".film-list-item")].map(item => {
                 let itemClone = item.cloneNode(true);
-                itemClone.classList.remove("item");
+                itemClone.classList.remove("film-list-item");
                 itemClone.classList.add("random-result");
                 return itemClone;
             });
@@ -261,7 +245,7 @@
         var genres = [];
 
         function applyGenres() {
-            for (const item of document.querySelectorAll(".item")) {
+            for (const item of document.querySelectorAll(".film-list-item")) {
                 if (genres.length === 0 && item.classList.contains("hide")) {
                     item.classList.remove("hide");
                     continue;
@@ -319,7 +303,7 @@
                 document.getElementById("search-film").classList.remove("active");
             }
 
-            for (const item of document.querySelectorAll(".item")) {
+            for (const item of document.querySelectorAll(".film-list-item")) {
                 let title = item.getElementsByClassName("title")[0].innerText.toLowerCase();
 
                 item.style.display = 'none';
@@ -359,11 +343,6 @@
             });
         */
     </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
 
 </html>

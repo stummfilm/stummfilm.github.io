@@ -172,29 +172,29 @@ main h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.film-list .item {
+.film-list .film-list-item {
   max-width: 200px;
   margin: 30px 30px 0 0;
   /* gap: 30px; */
   color: #f0f0f0;
   text-decoration: none;
 }
-.film-list .item .poster {
+.film-list .film-list-item .film-list-item__poster {
   position: relative;
 }
-.film-list .item .poster img {
+.film-list .film-list-item .film-list-item__poster img {
   max-width: 200px;
   border-radius: 2px;
 }
-.film-list .item .title {
+.film-list .film-list-item .film-list-item__title {
   margin-top: 15px;
   font-size: 24px;
   font-weight: bold;
 }
-.film-list .item .year {
+.film-list .film-list-item .film-list-item__year {
   margin-top: 5px;
 }
-.film-list .item:hover > .poster::after {
+.film-list .film-list-item:hover > .film-list-item__poster::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -203,7 +203,7 @@ main h2 {
   top: 0px;
   background: transparent url(../resources/play.svg) no-repeat center center;
 }
-.film-list .item > .poster::before {
+.film-list .film-list-item > .film-list-item__poster::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -213,7 +213,7 @@ main h2 {
   background-color: transparent;
   transition: background-color 0.3s;
 }
-.film-list .item:hover > .poster::before {
+.film-list .film-list-item:hover > .film-list-item__poster::before {
   background-color: rgba(0, 0, 0, 0.7);
   transition: background-color 0.3s;
 }
@@ -276,27 +276,27 @@ footer a {
   .film-list {
     margin-top: 20px;
   }
-  .film-list .item {
+  .film-list .film-list-item {
     max-width: 150px;
-    margin: 10px 10px 0 0;
+    margin: 20px 10px 0 0;
     /* gap: 30px; */
   }
-  .film-list .item .poster img {
+  .film-list .film-list-item .film-list-item__poster img {
     max-width: 150px;
   }
-  .film-list .item .title {
+  .film-list .film-list-item .film-list-item__title {
     margin-top: 7px;
     font-size: 16px;
   }
-  .film-list .item .year {
+  .film-list .film-list-item .film-list-item__year {
     margin-top: 2px;
     font-size: 12px;
   }
-  .film-list .item:hover > .poster::after {
+  .film-list .film-list-item:hover > .film-list-item__poster::after {
     width: 150px;
     height: 226px;
   }
-  .film-list .item > .poster::before {
+  .film-list .film-list-item > .film-list-item__poster::before {
     width: 150px;
     height: 226px;
   }

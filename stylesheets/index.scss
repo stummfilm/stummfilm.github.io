@@ -198,13 +198,13 @@ main {
     display: flex;
     flex-wrap: wrap;
 
-    .item {
+    .film-list-item {
         max-width: 200px;
         margin: 30px 30px 0 0; /* gap: 30px; */
         color: $text-color;
         text-decoration: none;
 
-        .poster {
+        .film-list-item__poster {
             position: relative;
 
             img {
@@ -213,13 +213,13 @@ main {
             }
         }
 
-        .title {
+        .film-list-item__title {
             margin-top: 15px;
             font-size: 24px;
             font-weight: bold;
         }
 
-        .year {
+        .film-list-item__year {
             margin-top: 5px;
         }
 
@@ -232,20 +232,20 @@ main {
             top: 0px;
         }
 
-        &:hover > .poster::after {
+        &:hover > .film-list-item__poster::after {
             @include itemPseudoelementSizing;
 
             background: transparent url(../resources/play.svg) no-repeat center center;
         }
 
-        & > .poster::before {
+        & > .film-list-item__poster::before {
             @include itemPseudoelementSizing;
 
             background-color: transparent;
             transition: background-color 0.3s;
         }
 
-        &:hover > .poster::before {
+        &:hover > .film-list-item__poster::before {
             background-color: rgba(0, 0, 0, 0.7);
 
             transition: background-color 0.3s;
@@ -317,22 +317,23 @@ footer {
 @media screen and (max-width: 540px) {
     .film-list {
         margin-top: 20px;
-        .item {
-            max-width: 150px;
-            margin: 10px 10px 0 0; /* gap: 30px; */
 
-            .poster {
+        .film-list-item {
+            max-width: 150px;
+            margin: 20px 10px 0 0; /* gap: 30px; */
+
+            .film-list-item__poster {
                 img {
                     max-width: 150px;
                 }
             }
 
-            .title {
+            .film-list-item__title {
                 margin-top: 7px;
                 font-size: 16px;
             }
 
-            .year {
+            .film-list-item__year {
                 margin-top: 2px;
                 font-size: 12px;
             }
@@ -342,11 +343,11 @@ footer {
                 height: 226px;
             }
 
-            &:hover > .poster::after {
+            &:hover > .film-list-item__poster::after {
                 @include itemPseudoelementSizing;
             }
 
-            & > .poster::before {
+            & > .film-list-item__poster::before {
                 @include itemPseudoelementSizing;
             }
         }
