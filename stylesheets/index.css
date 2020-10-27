@@ -278,7 +278,7 @@ footer a {
   }
   .film-list .film-list-item {
     max-width: 150px;
-    margin: 20px 10px 0 0;
+    margin: 20px 5px 0px 5px;
     /* gap: 30px; */
   }
   .film-list .film-list-item .film-list-item__poster img {
