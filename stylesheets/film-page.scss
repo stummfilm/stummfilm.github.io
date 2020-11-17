@@ -14,53 +14,54 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-header {
+.header {
     position: fixed;
-    left: 0;
     top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: $secondary-background-color;
-    background-size: cover;
-    background-position: center top;
-    z-index: -1;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    background-color: $background-color;
+}
 
-    & > .logo {
-        width: $logo-size;
-        height: $logo-size;
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-        position: absolute;
-        top: -($logo-size / 2);
-        left: $lg-margin;
+.header-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $secondary-text-color;
+    text-decoration: none;
+}
 
-        border-radius: 50%;
-        background-color: $background-color;
+.header-item__icon {
+    width: 24px;
+    height: 24px;
+    fill: $secondary-text-color;
+    margin-right: 5px; /* a.k.a. column-gap: 5px; in parent tag*/
+}
 
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+.header-item:hover,
+.header-item:focus,
+.header-item:active,
+.header-item_active {
+    color: $text-color;
 
-        & > img {
-            width: 24px;
-            margin-bottom: 15px;
-        }
-    }
-
-    & > .title {
-        position: absolute;
-        bottom: 60px;
-        left: $lg-margin;
-        right: $lg-margin;
-        font-weight: bold;
-        font-size: 72px;
-        color: $text-color;
-        text-shadow: -2px 4px 8px rgba(0, 0, 0, 0.5);
+    & > .header-item__icon {
+        fill: $text-color;
     }
 }
 
 main {
-    margin-top: 100vh;
+    margin-top: 60px;
     padding: 0px $lg-margin $lg-margin $lg-margin;
     background-color: $background-color;
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
@@ -412,5 +413,29 @@ footer {
     }
     100% {
         transform: translate(24px, 0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 0px 10px;
+    }
+
+    .header__logo {
+        font-size: 18px;
+        font-weight: bold;
+    }    
+    
+    .welcome-screen {
+        background: $secondary-background-color url(../resources/images/main.jpg) left top / cover;
+    }
+
+    .welcome-screen__content {
+        margin-left: 10px;
+    }
+
+    .page-section {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }

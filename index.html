@@ -125,7 +125,7 @@
             loadImageAsync(image);
         }
 
-
+/*
         function randomInteger(min, max) {
             let rand = min - 0.5 + Math.random() * (max - min + 1);
             return Math.round(rand);
@@ -189,20 +189,26 @@
             element.addEventListener('click', toggleGenre);
         }
 
-
-        let searchInput = document.querySelector("#search-input");
+*/
+        const searchInput = document.querySelector("#search-input");
+        const welcomeScreen = document.querySelector(".welcome-screen");
+        const main = document.querySelector("main");
 
         function onSearchUpdate() {
-            let textToSearch = searchInput.value;
+            const textToSearch = searchInput.value;
 
             if (textToSearch) {
-                document.getElementById("search-film").classList.add("active");
+                searchInput.parentElement.classList.add("header-item_active");
+                welcomeScreen.classList.add("welcome-screen_hidden");
+                main.classList.add("sections_is-search-mode");
             } else {
-                document.getElementById("search-film").classList.remove("active");
+                searchInput.parentElement.classList.remove("header-item_active");
+                welcomeScreen.classList.remove("welcome-screen_hidden");
+                main.classList.remove("sections_is-search-mode");
             }
 
             for (const item of document.querySelectorAll(".film-list-item")) {
-                let title = item.getElementsByClassName("film-list-item__title")[0].innerText.toLowerCase();
+                const title = item.getElementsByClassName("film-list-item__title")[0].innerText.toLowerCase();
 
                 item.style.display = 'none';
 

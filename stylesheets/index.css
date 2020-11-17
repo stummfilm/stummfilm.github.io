@@ -29,6 +29,7 @@ body {
   align-items: center;
   cursor: pointer;
   color: #a0a0a0;
+  text-decoration: none;
 }
 
 .header-item__icon {
@@ -96,6 +97,15 @@ body {
   color: #f0f0f0;
 }
 
+.welcome-screen_hidden {
+  display: none;
+}
+
+.sections_is-search-mode {
+  margin-top: 60px;
+  min-height: 100vh;
+}
+
 main {
   margin-top: 360px;
   background-color: black;
@@ -117,30 +127,31 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-.film-list .film-list-item {
+
+.film-list-item {
   max-width: 200px;
   margin: 20px 20px 0 0;
   /* gap: 30px; */
   color: #f0f0f0;
   text-decoration: none;
 }
-.film-list .film-list-item .film-list-item__poster {
+.film-list-item .film-list-item__poster {
   position: relative;
 }
-.film-list .film-list-item .film-list-item__poster img {
+.film-list-item .film-list-item__poster img {
   max-width: 200px;
   border-radius: 2px;
 }
-.film-list .film-list-item .film-list-item__title {
+.film-list-item .film-list-item__title {
   margin-top: 10px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
-.film-list .film-list-item .film-list-item__year {
+.film-list-item .film-list-item__year {
   margin-top: 5px;
 }
-.film-list .film-list-item:hover > .film-list-item__poster::after {
+.film-list-item:hover > .film-list-item__poster::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -149,7 +160,7 @@ main {
   top: 0px;
   background: transparent url(../resources/play.svg) no-repeat center center;
 }
-.film-list .film-list-item > .film-list-item__poster::before {
+.film-list-item > .film-list-item__poster::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -159,7 +170,7 @@ main {
   background-color: transparent;
   transition: background-color 0.3s;
 }
-.film-list .film-list-item:hover > .film-list-item__poster::before {
+.film-list-item:hover > .film-list-item__poster::before {
   background-color: rgba(0, 0, 0, 0.7);
   transition: background-color 0.3s;
 }
@@ -187,7 +198,7 @@ footer a {
     justify-content: center;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .header {
     padding: 0px 10px;
   }
@@ -206,35 +217,30 @@ footer a {
   }
 
   .page-section {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 20px 10px 20px 10px;
   }
-}
-@media screen and (max-width: 540px) {
-  .film-list {
-    margin-top: 20px;
-  }
-  .film-list .film-list-item {
+
+  .film-list-item {
     max-width: 150px;
     margin: 20px 5px 0px 5px;
     /* gap: 30px; */
   }
-  .film-list .film-list-item .film-list-item__poster img {
+  .film-list-item .film-list-item__poster > img {
     max-width: 150px;
   }
-  .film-list .film-list-item .film-list-item__title {
+  .film-list-item .film-list-item__title {
     margin-top: 7px;
     font-size: 16px;
   }
-  .film-list .film-list-item .film-list-item__year {
+  .film-list-item .film-list-item__year {
     margin-top: 2px;
     font-size: 12px;
   }
-  .film-list .film-list-item:hover > .film-list-item__poster::after {
+  .film-list-item:hover > .film-list-item__poster::after {
     width: 150px;
     height: 226px;
   }
-  .film-list .film-list-item > .film-list-item__poster::before {
+  .film-list-item > .film-list-item__poster::before {
     width: 150px;
     height: 226px;
   }
