@@ -188,9 +188,26 @@ footer a {
   }
 }
 @media screen and (max-width: 500px) {
+  .header {
+    padding: 0px 10px;
+  }
+
+  .header__logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .welcome-screen {
+    background: #282828 url(../resources/images/main.jpg) left top/cover;
+  }
+
+  .welcome-screen__content {
+    margin-left: 10px;
+  }
+
   .page-section {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 540px) {
