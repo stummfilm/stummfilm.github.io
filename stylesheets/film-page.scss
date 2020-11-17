@@ -298,15 +298,16 @@ footer {
 @media screen and (max-width: 500px) {
     header>.title {
         bottom: 65px;
-        left: 15px;
-        right: 15px;
+        left: 10px;
+        right: 10px;
         font-size: 48px;
     }
 
     main {
+        padding: 10px;
         & > h1 {
             font-size: 32px;
-            padding: 40px 0 40px 0;
+            padding: 10px 0 10px 0;
         }
     }
 
@@ -424,8 +425,8 @@ footer {
     .header__logo {
         font-size: 18px;
         font-weight: bold;
-    }    
-    
+    }
+
     .welcome-screen {
         background: $secondary-background-color url(../resources/images/main.jpg) left top / cover;
     }

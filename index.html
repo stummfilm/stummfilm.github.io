@@ -195,7 +195,7 @@
         const main = document.querySelector("main");
 
         function onSearchUpdate() {
-            const textToSearch = searchInput.value;
+            const textToSearch = searchInput.value.toLowerCase();
 
             if (textToSearch) {
                 searchInput.parentElement.classList.add("header-item_active");
