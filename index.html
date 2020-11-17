@@ -27,116 +27,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/index.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="welcome-screen">
-        <h1>
-            немое<br>
-            немецкое<br>
-            кино
-        </h1>
+    <div class="header">
+        <div class="header__logo">
+            stummfilm
+        </div>
+
+        <div class="search header-item">
+            <svg class="header-item__icon" viewbox="0 0 28 28">
+                <path
+                    d="M11.5,2 C16.7467051,2 21,6.25329488 21,11.5 C21,13.5819334 20.3302914,15.5074481 19.1945516,17.0728665 L25.5606602,23.4393398 C26.1464466,24.0251263 26.1464466,24.9748737 25.5606602,25.5606602 C25.0114854,26.109835 24.142423,26.1441584 23.5532622,25.6636304 L23.4393398,25.5606602 L17.0728665,19.1945516 C15.5074481,20.3302914 13.5819334,21 11.5,21 C6.25329488,21 2,16.7467051 2,11.5 C2,6.25329488 6.25329488,2 11.5,2 Z M11.5,5 C7.91014913,5 5,7.91014913 5,11.5 C5,15.0898509 7.91014913,18 11.5,18 C15.0898509,18 18,15.0898509 18,11.5 C18,7.91014913 15.0898509,5 11.5,5 Z" />
+            </svg>
+
+            <input class="header-item__label" type="text" placeholder="Поиск по названию" id="search-input">
+        </div>
+    </div>
+
+    <div class="welcome-screen">
+        <div class="welcome-screen__content">
+            <span class="welcome-screen__label">Добавлен недавно</span>
+            <h3 class="welcome-screen__title">
+                Hoffmanns<br>
+                Erzählungen
+            </h3>
+        </div>
     </div>
 
     <main>
-        <div id="logo">
-            <img src="resources/logo.svg" alt="Логотип">
-        </div>
-
-        <section id="catalog">
-            <header>
-                <h2>Каталог</h2>
-
-                <div id="search-panel">
-                    <div id="random-film">
-                        <svg viewbox="0 0 192 192">
-                            <circle cx="48" cy="40" r="8" />
-                            <circle cx="72" cy="40" r="8" />
-                            <circle cx="48" cy="64" r="8" />
-                            <circle cx="72" cy="64" r="8" />
-                            <path
-                                d="M176.568,111.03l-39.6-39.6A24.051,24.051,0,0,0,112,65.764V24A24.027,24.027,0,0,0,88,0H32A24.027,24.027,0,0,0,8,24V80a24.027,24.027,0,0,0,24,24H70.461l-7.029,7.029a24,24,0,0,0,0,33.941l39.6,39.6a24,24,0,0,0,33.941,0l39.6-39.6a24,24,0,0,0,0-33.941ZM32,88a8.009,8.009,0,0,1-8-8V24a8.009,8.009,0,0,1,8-8H88a8.009,8.009,0,0,1,8,8V78.461L86.461,88Zm133.255,45.657-39.6,39.6a8,8,0,0,1-11.312,0h0l-39.6-39.6a8,8,0,0,1,0-11.313l39.6-39.6a8,8,0,0,1,11.313,0l39.6,39.6a8,8,0,0,1,0,11.313Z" />
-                            <circle cx="120" cy="128" r="8" />
-                        </svg>
-
-                        <span>Случайный фильм</span>
-                    </div>
-
-                    <div id="mood-film">
-                        <svg viewbox="0 0 512 512">
-                            <path
-                                d="m0 346c0 91.203 74.78 166 166 166 90.981 0 165-74.467 165-166 0-5.316-.263-10.572-.757-15.761 5.229.496 10.489.761 15.757.761 91.533 0 166-74.019 166-165 0-91.203-74.78-166-166-166-90.981 0-165 74.467-165 166 0 5.268.265 10.528.761 15.757-5.189-.494-10.445-.757-15.761-.757-91.533 0-166 74.019-166 165zm324.242-46.755c-6.917-23.371-18.88-44.593-34.625-62.403.293-.28.586-.559.86-.866 14.135-15.873 34.372-24.976 55.523-24.976s41.388 9.103 55.522 24.976c5.509 6.186 14.991 6.736 21.178 1.227s6.736-14.991 1.227-21.178c-19.821-22.259-48.224-35.025-77.927-35.025s-58.106 12.766-77.927 35.024c-.075.084-.136.174-.208.259-16.205-12.754-34.854-22.531-55.11-28.526-1.158-7.164-1.755-14.449-1.755-21.757 0-74.991 60.561-136 135-136 74.991 0 136 61.009 136 136 0 74.439-61.009 135-136 135-7.308 0-14.593-.597-21.758-1.755zm-294.242 46.755c0-74.439 61.009-135 136-135 74.439 0 135 60.561 135 135 0 74.991-60.561 136-135 136-74.991 0-136-61.009-136-136z" />
-                            <path
-                                d="m69.256 367.351c-2.811 3.982-3.511 9.082-1.878 13.674 14.879 41.854 54.512 69.975 98.622 69.975s83.743-28.121 98.622-69.976c1.633-4.593.932-9.692-1.878-13.674-2.811-3.982-7.381-6.35-12.255-6.35h-168.978c-4.874 0-9.444 2.368-12.255 6.351zm37.134 23.649h119.22c-13.897 18.521-35.848 30-59.61 30s-45.712-11.479-59.61-30z" />
-                            <path
-                                d="m241 316c0-8.271-6.729-15-15-15s-15 6.729-15 15c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-24.813 20.187-45 45-45s45 20.187 45 45c0 8.284-6.716 15-15 15s-15-6.716-15-15z" />
-                            <path
-                                d="m106 271c24.813 0 45 20.187 45 45 0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.271-6.729-15-15-15s-15 6.729-15 15c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-24.813 20.187-45 45-45z" />
-                            <path
-                                d="m361 121c0-8.284 6.716-15 15-15s15 6.716 15 15c0 8.271 6.729 15 15 15s15-6.729 15-15c0-8.284 6.716-15 15-15s15 6.716 15 15c0 24.813-20.187 45-45 45s-45-20.187-45-45z" />
-                            <path
-                                d="m286 166c-24.813 0-45-20.187-45-45 0-8.284 6.716-15 15-15s15 6.716 15 15c0 8.271 6.729 15 15 15s15-6.729 15-15c0-8.284 6.716-15 15-15s15 6.716 15 15c0 24.813-20.187 45-45 45z" />
-                        </svg>
-
-                        <span>Найти по настроению</span>
-                    </div>
-
-                    <div id="genre-film">
-                        <svg viewbox="0 0 512 512">
-                            <path
-                                d="m216 362h-120c-8.284 0-15 6.716-15 15 0 41.355 33.645 75 75 75s75-33.645 75-75c0-8.284-6.716-15-15-15zm-60 60c-19.557 0-36.239-12.539-42.43-30h84.859c-6.19 17.461-22.872 30-42.429 30z" />
-                            <path
-                                d="m211 262c-13.451 0-26.096 5.238-35.606 14.749-5.858 5.858-5.858 15.355 0 21.213 5.857 5.857 15.355 5.857 21.213 0 3.844-3.845 8.956-5.962 14.393-5.962s10.549 2.117 14.394 5.962c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.465 10.606-4.393c5.858-5.858 5.858-15.355 0-21.213-9.51-9.512-22.155-14.75-35.606-14.75z" />
-                            <path
-                                d="m101 292c5.438 0 10.549 2.117 14.394 5.962 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.465 10.606-4.393c5.858-5.858 5.858-15.355 0-21.213-9.51-9.512-22.155-14.75-35.606-14.75s-26.096 5.238-35.606 14.749c-5.858 5.858-5.858 15.355 0 21.213 5.857 5.857 15.355 5.857 21.213 0 3.844-3.845 8.956-5.962 14.393-5.962z" />
-                            <path
-                                d="m425.394 103.966c-3.845 3.845-8.956 5.962-14.394 5.962s-10.549-2.117-14.394-5.962c-5.856-5.857-15.354-5.858-21.213 0-5.858 5.858-5.858 15.355 0 21.213 9.511 9.511 22.155 14.749 35.606 14.749s26.096-5.238 35.606-14.749c5.858-5.858 5.858-15.355 0-21.213-5.856-5.857-15.354-5.857-21.211 0z" />
-                            <path
-                                d="m315.394 103.966c-3.845 3.845-8.956 5.962-14.394 5.962s-10.549-2.117-14.394-5.962c-5.857-5.857-15.355-5.858-21.213 0s-5.858 15.355 0 21.213c9.511 9.511 22.155 14.749 35.606 14.749s26.096-5.238 35.606-14.749c5.858-5.858 5.858-15.355 0-21.213-5.856-5.857-15.354-5.857-21.211 0z" />
-                            <path
-                                d="m474.374 20.46c-78.548-27.28-158.202-27.28-236.748 0-21.907 7.608-36.626 28.472-36.626 51.917v102.646c-54.5-7.138-109.201-1.305-163.374 17.509-21.907 7.608-36.626 28.472-36.626 51.916v112.552c0 85.467 69.532 155 155 155s155-69.533 155-155v-23.711c14.492 4.404 29.55 6.639 45 6.639 85.468 0 155-69.533 155-155v-112.551c0-23.445-14.719-44.309-36.626-51.917zm-193.374 336.54c0 68.925-56.075 125-125 125s-125-56.075-125-125v-112.552c0-10.681 6.618-20.156 16.468-23.577 36.009-12.506 72.271-18.759 108.532-18.759s72.523 6.253 108.532 18.759c9.85 3.421 16.468 12.896 16.468 23.577zm200-172.072c0 68.925-56.075 125-125 125-15.595 0-30.689-2.813-45-8.353v-31.647h105c8.284 0 15-6.716 15-15 0-41.355-33.645-75-75-75-23.674 0-44.806 11.037-58.562 28.223-6.084-6.987-13.948-12.454-23.064-15.619-14.425-5.01-28.888-9.091-43.374-12.261v-107.894c0-10.681 6.618-20.156 16.468-23.577 72.018-25.013 145.047-25.013 217.064 0 9.85 3.421 16.468 12.895 16.468 23.577zm-167.43 55c6.19-17.461 22.873-30 42.43-30s36.239 12.539 42.43 30z" />
-                        </svg>
-
-                         <span>Найти по жанру</span>
-                    </div>
-
-                    <div id="search-film">
-                        <svg viewbox="0 0 28 28">
-                            <path
-                                d="M11.5,2 C16.7467051,2 21,6.25329488 21,11.5 C21,13.5819334 20.3302914,15.5074481 19.1945516,17.0728665 L25.5606602,23.4393398 C26.1464466,24.0251263 26.1464466,24.9748737 25.5606602,25.5606602 C25.0114854,26.109835 24.142423,26.1441584 23.5532622,25.6636304 L23.4393398,25.5606602 L17.0728665,19.1945516 C15.5074481,20.3302914 13.5819334,21 11.5,21 C6.25329488,21 2,16.7467051 2,11.5 C2,6.25329488 6.25329488,2 11.5,2 Z M11.5,5 C7.91014913,5 5,7.91014913 5,11.5 C5,15.0898509 7.91014913,18 11.5,18 C15.0898509,18 18,15.0898509 18,11.5 C18,7.91014913 15.0898509,5 11.5,5 Z" />
-                        </svg>
-
-                        <input type="text" placeholder="Поиск по названию" id="search-input">
-                    </div>
-                </div>
-            </header>
-
-            <div class="extended-search-panel hide" id="genres-panel">
-                <h3>Поиск фильма по жанру</h3>
-
-                <span class="genre">Ужасы</span>
-                <span class="genre">Фентези</span>
-                <span class="genre">Драма</span>
-                <span class="genre">Исторический</span>
-                <span class="genre">Фантастика</span>
-            </div>
-
-            <div class="extended-search-panel hide" id="random-panel">
-                <h3>Случайный фильм</h3>
-                <div class="content">
-                    <div id="random-fi">
-                        <img src="resources/images/placeholder-random.png" alt="">
-                    </div>
-
-                    <button id="random-run">Мне повезёт!</button>
-                </div>
-            </div>
-
+        <section class="page-section">
+            <div class="page-section__title">Каталог фильмов</div>
+            
             <div class="film-list">
                 <a class="film-list-item" href="films/erzahlungen.html" data-genres="Фэнтези">
                     <div class="film-list-item__poster">
-                        <img src="resources/images/posters/erzahlungen.jpg" alt="Erzahlungen poster">
+                        <img data-src="resources/images/posters/erzahlungen.jpg"
+                            src="resources/images/placeholder-200x300.svg" alt="Erzahlungen poster">
                     </div>
                     <div class="film-list-item__title">Рассказы Гофмана</div>
                     <div class="film-list-item__year">1916</div>
@@ -144,7 +71,8 @@
 
                 <a class="film-list-item" href="films/golem.html" data-genres="Исторический, Фантастика, Драма">
                     <div class="film-list-item__poster">
-                        <img data-src="resources/images/posters/golem-min.jpg" src="resources/images/placeholder-200x300.png" alt="Golem poster">
+                        <img data-src="resources/images/posters/golem-min.jpg"
+                            src="resources/images/placeholder-200x300.svg" alt="Golem poster">
                     </div>
                     <div class="film-list-item__title">Голем, как он пришёл в мир</div>
                     <div class="film-list-item__year">1920</div>
@@ -152,7 +80,8 @@
 
                 <a class="film-list-item" href="films/nosferatu.html" data-genres="Ужасы, Фентези">
                     <div class="film-list-item__poster">
-                        <img data-src="resources/images/posters/nosferatu-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/nosferatu-min.jpg"
+                            src="resources/images/placeholder-200x300.svg" alt="Nosferatu poster">
                     </div>
                     <div class="film-list-item__title">Носферату, симфония ужаса</div>
                     <div class="film-list-item__year">1922</div>
@@ -160,7 +89,8 @@
 
                 <a class="film-list-item" href="films/faust.html" data-genres="Ужасы, Фентези, Драма">
                     <div class="film-list-item__poster">
-                        <img data-src="resources/images/posters/faust-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/faust-min.jpg"
+                            src="resources/images/placeholder-200x300.svg" alt="Nosferatu poster">
                     </div>
                     <div class="film-list-item__title">Фауст</div>
                     <div class="film-list-item__year">1926</div>
@@ -168,27 +98,18 @@
 
                 <a class="film-list-item" href="films/frau.html" data-genres="">
                     <div class="film-list-item__poster">
-                        <img data-src="resources/images/posters/frau-im-mond-min.jpg" src="resources/images/placeholder-200x300.png" alt="Nosferatu poster">
+                        <img data-src="resources/images/posters/frau-im-mond-min.jpg"
+                            src="resources/images/placeholder-200x300.svg" alt="Nosferatu poster">
                     </div>
                     <div class="film-list-item__title">Женщина на луне</div>
                     <div class="film-list-item__year">1929</div>
                 </a>
             </div>
         </section>
-
-        <!--section>
-            <header>
-                <h2>О немом кино</h2>
-            </header>
-
-            <div class="posts-list">
-                <a class="post" href="posts/intertitles-and-typograhy.html">Интертитры и типографика</a>
-            </div>
-        </section-->
     </main>
 
     <footer>
-        Made with <img src="resources/heart.svg" alt="love"> by 
+        Made with <img src="resources/heart.svg" alt="love"> by
         <a href="https://danielargent.github.io/index.html">Denis Tsvikevich</a>
     </footer>
 
@@ -204,49 +125,25 @@
             loadImageAsync(image);
         }
 
+
         function randomInteger(min, max) {
             let rand = min - 0.5 + Math.random() * (max - min + 1);
             return Math.round(rand);
         }
 
-        let covers = [
-            "resources/images/posters/golem-min.jpg",
-            "resources/images/posters/caligari-min.jpg",
-            "resources/images/posters/nosferatu-min.jpg",
-            "resources/images/posters/brennende-min.jpg",
-            "resources/images/posters/faust-min.jpg",
-            "resources/images/posters/frau-im-mond-min.jpg"
-        ];
-
         document.getElementById("random-film").addEventListener("click", () => {
-            document.getElementById("random-film").classList.toggle("active");
-            document.getElementById("random-panel").classList.toggle("hide");
+            let filmListItems = [...document.querySelectorAll(".film-list-item")];
+            let randomId = randomInteger(0, filmListItems.length - 1);
+
+            document.location = filmListItems[randomId].href;
         });
 
-        document.getElementById("random-run").addEventListener("click", () => {
-            let container = document.getElementById("random-fi");
-            let items = [...document.querySelectorAll(".film-list-item")].map(item => {
-                let itemClone = item.cloneNode(true);
-                itemClone.classList.remove("film-list-item");
-                itemClone.classList.add("random-result");
-                return itemClone;
-            });
-
-            console.log(items)
-            for (let i = 1; i <= 10; i++) {
-                setTimeout(() => {
-                    let randomId = randomInteger(0, covers.length - 1);
-                    container.innerHTML = "";
-                    container.appendChild(items[(randomId)]);
-                }, 100 * i);
-            }
-        });
 
         var genres = [];
 
         function applyGenres() {
             for (const item of document.querySelectorAll(".film-list-item")) {
-                if (genres.length === 0 && item.classList.contains("hide")) {
+                if (genres.length === 0) {
                     item.classList.remove("hide");
                     continue;
                 }
@@ -257,13 +154,13 @@
                 if (itemGenres) {
                     let flag = false;
                     for (const genre of genres) {
-                        if (!itemGenres.includes(genre)) {
+                        if (itemGenres.includes(genre)) {
                             flag = true;
                             break;
                         }
                     }
 
-                    if (!flag) {
+                    if (flag) {
                         item.classList.remove("hide");
                     }
                 }
@@ -292,9 +189,10 @@
             element.addEventListener('click', toggleGenre);
         }
 
+
         let searchInput = document.querySelector("#search-input");
 
-        function f() {
+        function onSearchUpdate() {
             let textToSearch = searchInput.value;
 
             if (textToSearch) {
@@ -304,7 +202,7 @@
             }
 
             for (const item of document.querySelectorAll(".film-list-item")) {
-                let title = item.getElementsByClassName("title")[0].innerText.toLowerCase();
+                let title = item.getElementsByClassName("film-list-item__title")[0].innerText.toLowerCase();
 
                 item.style.display = 'none';
 
@@ -314,34 +212,8 @@
             }
         }
 
-        searchInput.addEventListener('change', f);
-        searchInput.addEventListener('input', f);
-        /*
-            function randomInteger(min, max) {
-                // получить случайное число от (min-0.5) до (max+0.5)
-                let rand = min - 0.5 + Math.random() * (max - min + 1);
-                return Math.round(rand);
-            }
-    
-            let prev = 0;
-    
-            document.querySelectorAll(".poster").forEach(item => {
-                let deg = randomInteger(0, 5);
-    
-                if (deg <= 2 || prev === deg) {
-                    deg = randomInteger(-5, -3);
-                }
-    
-                prev = deg;
-    
-                item.style.webkitTransform = 'rotate('+deg+'deg)'; 
-                item.style.mozTransform    = 'rotate('+deg+'deg)'; 
-                item.style.msTransform     = 'rotate('+deg+'deg)'; 
-                item.style.oTransform      = 'rotate('+deg+'deg)'; 
-                item.style.transform       = 'rotate('+deg+'deg)'; 
-                //item.style.transform = "rotate(" + randomInteger(1, 5) + "deg);"
-            });
-        */
+        searchInput.addEventListener('change', onSearchUpdate);
+        searchInput.addEventListener('input', onSearchUpdate);
     </script>
 </body>
 
