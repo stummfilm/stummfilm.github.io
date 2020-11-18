@@ -64,7 +64,7 @@ main {
     margin-top: 60px;
     padding: 0px $lg-margin $lg-margin $lg-margin;
     background-color: $background-color;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.3);
 
     & > h1 {
         font-weight: bold;
@@ -282,8 +282,8 @@ footer {
         flex-direction: column;
 
         & > #player {
-            width: 85vw;
-            height: 47.8vw; /* 16:9 */
+            width: 88vw;
+            height: 49vw; /* 16:9 */
             min-height: 200px;
             margin-right: 0px; /* a.k.a. column-gap: 0px; */
             margin-bottom: 20px; /* a.k.a. row-gap: 20px; */

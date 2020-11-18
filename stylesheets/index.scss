@@ -105,93 +105,97 @@ body {
     display: none;
 }
 
-.sections_is-search-mode {
+.not-found {
+    margin-top: 20px;
+}
+
+.not-found_hidden {
+    display: none;
+}
+
+.main {
+    margin-top: 360px;
+    background-color: $background-color;
+    z-index: 2;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main_search-mode {
     margin-top: 60px;
     min-height: 100vh;
 }
 
-main {
-    margin-top: 360px;
-    background-color: $background-color;
-    z-index: 2;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.page-section {
+.section {
     padding: 20px 40px 40px 40px;
 }
 
-.page-section__title {
+.section__title {
     font-size: 18px;
     line-height: 22px;
     color: $secondary-text-color;
 }
 
-.film-list {
+.catalog {
     display: flex;
     flex-wrap: wrap;
 }
 
-.film-list-item {
+.catalog-item {
     max-width: 200px;
     margin: 20px 20px 0 0; /* gap: 30px; */
     color: $text-color;
     text-decoration: none;
+}
 
-    .film-list-item__poster {
-        position: relative;
+@mixin itemPseudoelementSizing {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 298px;
+    left: 0px;
+    top: 0px;
+}
 
-        img {
-            max-width: 200px;
-            border-radius: 2px;
-        }
-    }
+.catalog-item:hover > .catalog-item__poster::after {
+    @include itemPseudoelementSizing;
 
-    .film-list-item__title {
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: bold;
-    }
+    background: transparent url(../resources/play.svg) no-repeat center center;
+}
 
-    .film-list-item__year {
-        margin-top: 5px;
-    }
+.catalog-item > .catalog-item__poster::before {
+    @include itemPseudoelementSizing;
 
-    @mixin itemPseudoelementSizing {
-        content: "";
-        position: absolute;
-        width: 200px;
-        height: 298px;
-        left: 0px;
-        top: 0px;
-    }
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
 
-    &:hover > .film-list-item__poster::after {
-        @include itemPseudoelementSizing;
+.catalog-item:hover > .catalog-item__poster::before {
+    background-color: rgba(0, 0, 0, 0.7);
 
-        background: transparent url(../resources/play.svg) no-repeat center center;
-    }
+    transition: background-color 0.3s;
+}
 
-    & > .film-list-item__poster::before {
-        @include itemPseudoelementSizing;
+.catalog-item__poster {
+    position: relative;
 
-        background-color: transparent;
-        transition: background-color 0.3s;
-    }
-
-    &:hover > .film-list-item__poster::before {
-        background-color: rgba(0, 0, 0, 0.7);
-
-        transition: background-color 0.3s;
+    img {
+        max-width: 200px;
+        border-radius: 2px;
     }
 }
 
-.hide {
-    display: none;
+.catalog-item__title {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
 }
 
-footer {
+.catalog-item__year {
+    margin-top: 5px;
+}
+
+.footer {
     border-top: solid 1px rgb(40, 40, 40);
     background-color: rgb(0, 0, 0);
     padding: 15px;
@@ -208,12 +212,6 @@ footer {
 }
 
 @media screen and (max-width: 740px) {
-    .film-list {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 540px) {
     .header {
         padding: 0px 10px;
     }
@@ -231,24 +229,28 @@ footer {
         margin-left: 10px;
     }
 
-    .page-section {
+    .section {
         padding: 20px 10px 20px 10px;
     }
 
-    .film-list-item {
+    .catalog {
+        justify-content: center;
+    }
+
+    .catalog-item {
         max-width: 150px;
         margin: 20px 5px 0px 5px; /* gap: 30px; */
 
-        .film-list-item__poster > img {
+        .catalog-item__poster > img {
             max-width: 150px;
         }
 
-        .film-list-item__title {
+        .catalog-item__title {
             margin-top: 7px;
             font-size: 16px;
         }
 
-        .film-list-item__year {
+        .catalog-item__year {
             margin-top: 2px;
             font-size: 12px;
         }
@@ -258,11 +260,11 @@ footer {
             height: 226px;
         }
 
-        &:hover > .film-list-item__poster::after {
+        &:hover > .catalog-item__poster::after {
             @include itemPseudoelementSizing;
         }
 
-        & > .film-list-item__poster::before {
+        & > .catalog-item__poster::before {
             @include itemPseudoelementSizing;
         }
     }
