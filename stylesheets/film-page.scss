@@ -110,6 +110,7 @@ main {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         line-height: 22px;
+        flex-grow: 1;
     }
 }
 
@@ -185,7 +186,7 @@ main {
     display: inline-block;
     background-color: #171717;
     border-radius: 2px;
-    padding: 5px 10px;
+    padding: 2px 10px;
     margin-right: 5px;
 }
 
@@ -282,8 +283,8 @@ footer {
         flex-direction: column;
 
         & > #player {
-            width: 88vw;
-            height: 49vw; /* 16:9 */
+            width: 100%; /* about 88vw */
+            height: 49.5vw; /* 16:9 */
             min-height: 200px;
             margin-right: 0px; /* a.k.a. column-gap: 0px; */
             margin-bottom: 20px; /* a.k.a. row-gap: 20px; */

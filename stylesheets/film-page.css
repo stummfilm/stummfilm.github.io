@@ -100,6 +100,7 @@ main > h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 22px;
+  flex-grow: 1;
 }
 
 #translations {
@@ -168,7 +169,7 @@ main > h1 {
   display: inline-block;
   background-color: #171717;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 2px 10px;
   margin-right: 5px;
 }
 
@@ -260,8 +261,9 @@ footer a {
     flex-direction: column;
   }
   #film > #player {
-    width: 88vw;
-    height: 49vw;
+    width: 100%;
+    /* about 88vw */
+    height: 49.5vw;
     /* 16:9 */
     min-height: 200px;
     margin-right: 0px;
