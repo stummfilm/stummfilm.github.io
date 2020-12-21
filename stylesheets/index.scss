@@ -80,7 +80,12 @@ body {
     width: 100vw;
     display: flex;
     align-items: center;
-    background: $secondary-background-color url(../resources/images/main.jpg) right top / cover;
+    /*background: $secondary-background-color url(../resources/images/main.jpg) right top / cover;*/
+    background: rgb(253,187,45);
+    background: -moz-linear-gradient(90deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+    background: linear-gradient(90deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdbb2d",endColorstr="#3a1c71",GradientType=1);
     z-index: -1;
 }
 
@@ -91,7 +96,7 @@ body {
 .welcome-screen__label {
     font-size: 18px;
     line-height: 22px;
-    color: $secondary-text-color;
+    color: $text-color;
 }
 
 .welcome-screen__title {
@@ -222,7 +227,12 @@ body {
     }
 
     .welcome-screen {
-        background: $secondary-background-color url(../resources/images/main.jpg) left top / cover;
+        /*background: $secondary-background-color url(../resources/images/main.jpg) left top / cover;*/
+        background: rgb(253,187,45);
+        background: -moz-linear-gradient(180deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+        background: linear-gradient(180deg, rgba(253,187,45,1) 0%, rgba(58,28,113,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdbb2d",endColorstr="#3a1c71",GradientType=1);
     }
 
     .welcome-screen__content {
