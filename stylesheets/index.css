@@ -76,12 +76,8 @@ body {
   width: 100vw;
   display: flex;
   align-items: center;
-  /*background: $secondary-background-color url(../resources/images/main.jpg) right top / cover;*/
-  background: #fdbb2d;
-  background: -moz-linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
-  background: -webkit-linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
-  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdbb2d",endColorstr="#3a1c71",GradientType=1);
+  /* background: $secondary-background-color url(../resources/images/main.jpg) right top / cover;*/
+  background: #3a1c71;
   z-index: -1;
 }
 
