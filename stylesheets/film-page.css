@@ -186,7 +186,7 @@ main > h1 {
   line-height: 22px;
 }
 
-.avatar {
+.actor__avatar {
   width: 150px;
   height: 150px;
 }
@@ -313,7 +313,7 @@ footer a {
     padding-bottom: 45px;
   }
 
-  .avatar {
+  .actor__avatar {
     width: 100px;
     height: 100px;
   }
