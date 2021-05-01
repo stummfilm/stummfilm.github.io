@@ -1,0 +1,19 @@
+{
+  "name": "Ведьмы (1922)",
+  "title": "Ведьмы",
+  "seo_title": "Ведьмы (1922) смотреть с русскими субтитрами",
+  "translations": [
+    { "src": "YOBdAwJ_go0", "title": "Английские субтитры" },
+    { "src": "EV56rYclyKU", "title": "Русская озвучка", "default": true}
+  ],
+  "tags": ["Комедия", "Фэнтези", "Ужасы"],
+  "country": "Швеция, Дания",
+  "year": "1922",
+  "description": "Шведский развлекательно-документальный фильм, повествующий о связанных с кодовством суевериях, имевших место как в Средневековье, так и в современности.",
+  "posters": [
+    "../resources/images/haxan/haxan-poster-1.jpg",
+    "../resources/images/haxan/haxan-poster-2.jpg",
+    "../resources/images/haxan/haxan-poster-3.jpg",
+    "../resources/images/haxan/haxan-poster-4.jpg"
+  ]
+}
