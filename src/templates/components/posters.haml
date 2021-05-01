@@ -1,0 +1,9 @@
+%section.posters
+  %h3 Постеры
+
+  %div.posters-list 
+    - data[:posters].each do |poster|
+      %img.posters-list__item.poster{'src': '../resources/images/placeholder-200x300.svg',
+        'data-src': poster,
+        'alt': "Постер к фильму #{data[:name]}"
+      }/

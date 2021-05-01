@@ -1,0 +1,42 @@
+- require './src/utils/render'
+
+%html
+  = render_component :head, data
+  %body
+    = render_component :header
+
+    %main
+      %h1
+        = data[:title]
+
+      %section#film
+        = render_component :player
+
+        %aside
+          = render_component :translation_list, data
+
+          %div.description
+            %div.tags
+              - data[:tags].each do |tag|
+                %span.tag
+                  = tag
+
+            %span.country-year
+              = data[:country]
+              ,
+              = data[:year]
+
+            = data[:description]
+
+      -if data.key? :about
+        = render_component :about, data
+
+      -if data.key? :actors
+        = render_component :actors, data
+      
+      - if data.key? :posters
+        = render_component :posters, data
+
+    = render_component :footer, data
+    
+    %script{src: "../scripts/film.js"}

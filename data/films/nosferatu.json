@@ -1,0 +1,83 @@
+{
+  "name": "Носферату: Симфония ужаса (1922)",
+  "title": "Носферату: Симфония ужаса",
+  "seo_title": "Носферату: симфония ужаса (1922) смотреть с русскими субтитрами",
+  "translations": [
+    { "src": "JpCnwGIPEo4", "title": "Оригинал" },
+    { "src": "rfvmABSPguw", "title": "Английские субтитры" },
+    { "src": "xqKN7VkcZ_c", "title": "Английские интертитры" },
+    { "src": "esEGXwsrqTY", "title": "Русские субтитры", "default": true }
+  ],
+  "tags": ["Ужасы", "Фентези"],
+  "country": "Германия",
+  "year": "1922",
+  "description": "Первый в мире фильм про вампиров, желающих приобрести уютный домик в Германии. По-настоящему жуткая картина, местами пугающая больше, чем все современные фильмы ужасов.",
+  "about": "Экранизация романа Брэма Стокера «Дракула», снятая классиком немецкого киноэксперссионизма Ф. В. Мурнау. Вследствие того, что режиссёру не удалось получить права на экранизацию романа, сюжет отличается от оригинального: вместо Англии - Германия 1838 года, вместо графа Дракулы - граф Орлок. Именно «Носферату» породил устойчивое представление о губительности солнечного света для вампиров - в романе Стокера солнечный свет лишь ослаблял Дракулу, но не уничтожал.",
+  "actors": [
+    {
+      "avatar": "../resources/images/nosferatu/actors/max-schreck.png",
+      "name": "Макс Шрек",
+      "role": "Граф Орлок"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/gustav-von.png",
+      "name": "Гюстав фон Вангенхайм",
+      "role": "Томас Хаттер"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/greta-scroder.png",
+      "name": "Грета Шрёдер",
+      "role": "Эллен Хаттер, жена Томаса"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/alexander-gannah.png",
+      "name": "Александр Гранах",
+      "role": "Кнок, риелтор"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/georg.png",
+      "name": "Георг Шнелль",
+      "role": "Ридер Хардинг"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/ruth.png",
+      "name": "Рут Ландсхоф",
+      "role": "Рут, сестра Ридера"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/gustav-botz.png",
+      "name": "Гюстав Ботц",
+      "role": "Доктор Сиверс"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/john-gottowt.png",
+      "name": "Джон Готтовт",
+      "role": "Профессор Бульвер, парацельсианец"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/heinrich-witte.png",
+      "name": "Генрих Витте",
+      "role": "Стражник психбольницы"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/max-nemetz.png",
+      "name": "Макс Немец",
+      "role": "Капитан Эмпузы"
+    },
+    {
+      "avatar": "../resources/images/nosferatu/actors/wolfgang-heinz.png",
+      "name": "Вольфганг Хайнц",
+      "role": "Боцман"
+    }
+  ],
+  "posters": [
+    "../resources/images/nosferatu/nosferatu-poster-1.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-2.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-4.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-5.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-6.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-3.jpg",
+    "../resources/images/nosferatu/nosferatu-art-3.jpg",
+    "../resources/images/nosferatu/nosferatu-poster-7.jpg"
+  ]
+}

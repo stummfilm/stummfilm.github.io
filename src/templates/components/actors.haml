@@ -1,0 +1,11 @@
+%section.actors
+  %h3 Актёры
+
+  %div.actors-list
+    - data[:actors].each do |actor|
+      %div.actors-list__item.actor
+        %img.actor__avatar{'src': "../resources/images/placeholder-200x300.svg", 'data-src': actor[:avatar], 'alt': "#{actor[:name]} в роли #{actor[:role]}"}/
+        %span.actor__name
+          = actor[:name]
+        %span.actor__role
+          = actor[:role]

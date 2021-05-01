@@ -1,0 +1,74 @@
+{
+  "name": "Фауст: старинная немецкая легенда (1926)",
+  "title": "Фауст: старинная немецкая легенда",
+  "seo_title": "Фауст: старинная немецкая легенда (1926) смотреть с русскими субтитрами",
+  "translations": [
+    { "src": "3RBarCqVkXM", "title": "Оригинал" },
+    { "src": "R9Eom1OtOr4", "title": "Английские интертитры + русская озвучка" },
+    { "src": "Trl8avzu0-4", "title": "Русские субтитры", "default": true }
+  ],
+  "tags": ["Ужасы", "Фентези", "Драма"],
+  "country": "Германия",
+  "year": "1926",
+  "description": "Ещё одна интерпретация легенды о докторе Фаусте, снятая по мотивам одноимённого романа Иоганна Вольфганга Гёте. Классическая история противостояния добра и зла, история несчастной любви и вечной молодости.",
+  "actors": [
+    {
+      "avatar": "../resources/images/faust/actors/gosta-ekman.png",
+      "name": "Йёста Экман старший",
+      "role": "Фауст"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/emil-jannings.png",
+      "name": "Эмиль Яннингс",
+      "role": "Мефистофель"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/camilla-horn.png",
+      "name": "Камилла Хорн",
+      "role": "Гретхен"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/fryda-richard.png",
+      "name": "Фрида Ричард",
+      "role": "Мать Гретхен"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/whilam-dirtel.png",
+      "name": "Вильям Дитерль",
+      "role": "Валентин, брат Гретхен"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/yvette-guilbert.png",
+      "name": "Иветта Гильбер",
+      "role": "Марта Швердтлейн, тётя Гретхен"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/hanna-ralph.png",
+      "name": "Ханна Ральф",
+      "role": "Герцогиня Пармская"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/eric-barklay.png",
+      "name": "Эрик Барклай",
+      "role": "Герцог Пармский"
+    },
+    {
+      "avatar": "../resources/images/faust/actors/verner-fueterer.png",
+      "name": "Вернер Фуэтерер",
+      "role": "Архангел Михаил"
+    }
+  ],
+  "posters": [
+    "../resources/images/faust/poster-1-min.jpg",
+    "../resources/images/faust/poster-2-min.jpg",
+    "../resources/images/faust/poster-3-min.jpg",
+    "../resources/images/faust/poster-5-min.jpg",
+    "../resources/images/faust/poster-4-min.jpg",
+    "../resources/images/faust/poster-6-min.jpg",
+    "../resources/images/faust/poster-7-min.jpg",
+    "../resources/images/faust/poster-8-min.jpg",
+    "../resources/images/faust/poster-9-min.jpg",
+    "../resources/images/faust/poster-10-min.jpg",
+    "../resources/images/faust/poster-11-min.jpg"
+  ]
+}
