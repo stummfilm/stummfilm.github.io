@@ -59,16 +59,16 @@
     }
   ],
   "posters": [
-    "../resources/images/faust/poster-1-min.jpg",
-    "../resources/images/faust/poster-2-min.jpg",
-    "../resources/images/faust/poster-3-min.jpg",
-    "../resources/images/faust/poster-5-min.jpg",
-    "../resources/images/faust/poster-4-min.jpg",
-    "../resources/images/faust/poster-6-min.jpg",
-    "../resources/images/faust/poster-7-min.jpg",
-    "../resources/images/faust/poster-8-min.jpg",
-    "../resources/images/faust/poster-9-min.jpg",
-    "../resources/images/faust/poster-10-min.jpg",
-    "../resources/images/faust/poster-11-min.jpg"
+    "./resources/images/faust/poster-1-min.jpg",
+    "./resources/images/faust/poster-2-min.jpg",
+    "./resources/images/faust/poster-3-min.jpg",
+    "./resources/images/faust/poster-5-min.jpg",
+    "./resources/images/faust/poster-4-min.jpg",
+    "./resources/images/faust/poster-6-min.jpg",
+    "./resources/images/faust/poster-7-min.jpg",
+    "./resources/images/faust/poster-8-min.jpg",
+    "./resources/images/faust/poster-9-min.jpg",
+    "./resources/images/faust/poster-10-min.jpg",
+    "./resources/images/faust/poster-11-min.jpg"
   ]
 }

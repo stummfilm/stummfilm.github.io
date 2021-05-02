@@ -255,10 +255,12 @@ h3 {
 .posters-list {
     display: flex;
     flex-wrap: wrap;
+    content-visibility: auto;
 }
 
 .poster {
     height: 300px;
+    width: auto;
 
     margin: 0 5px 5px 0; /* gap: 5px; */
 }

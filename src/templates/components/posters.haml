@@ -1,9 +1,15 @@
+- require 'dimensions'
+
 %section.posters
   %h3 Постеры
 
   %div.posters-list 
     - data[:posters].each do |poster|
-      %img.posters-list__item.poster{src: poster, 
-        loading: 'lazy',
+      - height, width = Dimensions.dimensions poster
+      %img.posters-list__item.poster{src: '.' + poster, 
+        loading: :lazy,
+        deocde: :async,
+        height: height,
+        width: width,
         alt: "Постер к фильму #{data[:name]}",
       }/
